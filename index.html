@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Roadmap Artístico — Entre Ríos</title>
+  <meta name="description" content="Planificación estratégica de actividad lírica en Entre Ríos. Ciudades, instituciones italianas, calendario de eventos y seguimiento de contactos." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <div class="nav-brand">
+        <span class="nav-flag">🎭</span>
+        <span class="nav-title">Roadmap Lírico <em>Entre Ríos</em></span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#ciudades">Ciudades</a></li>
+        <li><a href="#calendario">Calendario</a></li>
+        <li><a href="#mercados">Mercados</a></li>
+        <li><a href="#repertorio">Repertorio</a></li>
+        <li><a href="#seguimientos">Seguimientos</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-content">
+      <div class="hero-badge">Provincia de Entre Ríos · 2026</div>
+      <h1 class="hero-title">Roadmap Artístico<br /><span>Cantante Lírico</span></h1>
+      <p class="hero-subtitle">Planificación estratégica de presencia lírica en colectividades italianas, municipios, iglesias y mercado privado de la provincia.</p>
+      <div class="hero-stats" id="hero-stats">
+        <!-- populated by JS -->
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="notes-float">♪</div>
+      <div class="notes-float" style="animation-delay:1.2s; font-size:2rem;">♫</div>
+      <div class="notes-float" style="animation-delay:2.4s; font-size:1.4rem;">𝄞</div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- CIUDADES -->
+    <section id="ciudades" class="section">
+      <div class="section-header">
+        <h2>Ciudades Prioritarias</h2>
+        <p>Ordenadas por concentración de instituciones activas y oportunidades confirmadas</p>
+      </div>
+      <div class="ciudades-grid" id="ciudades-grid">
+        <!-- populated by JS -->
+      </div>
+    </section>
+
+    <!-- CALENDARIO -->
+    <section id="calendario" class="section section-dark">
+      <div class="section-header">
+        <h2>Calendario Anual</h2>
+        <p>Estrategia estacional para maximizar presencia en la agenda cultural</p>
+      </div>
+      <div class="calendario-grid" id="calendario-grid">
+        <!-- populated by JS -->
+      </div>
+      <!-- Timeline de eventos clave -->
+      <div class="timeline-container">
+        <h3 class="timeline-title">Fechas Clave del Año</h3>
+        <div class="timeline" id="timeline">
+          <!-- populated by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- MERCADOS ALTERNATIVOS -->
+    <section id="mercados" class="section">
+      <div class="section-header">
+        <h2>Mercados Alternativos</h2>
+        <p>Segmentos con demanda constante más allá de las colectividades italianas</p>
+      </div>
+      <div class="mercados-grid" id="mercados-grid">
+        <!-- populated by JS -->
+      </div>
+    </section>
+
+    <!-- REPERTORIO -->
+    <section id="repertorio" class="section section-dark">
+      <div class="section-header">
+        <h2>Repertorio Estratégico</h2>
+        <p>Organizado por contexto de uso y mercado objetivo</p>
+      </div>
+      <div class="repertorio-grid" id="repertorio-grid">
+        <!-- populated by JS -->
+      </div>
+    </section>
+
+    <!-- SEGUIMIENTOS -->
+    <section id="seguimientos" class="section">
+      <div class="section-header">
+        <h2>Seguimiento de Contactos</h2>
+        <p>El activo real no son las ciudades — es el historial de cada contacto</p>
+      </div>
+      <div class="seguimientos-toolbar">
+        <div class="filter-group">
+          <label>Filtrar por ciudad:</label>
+          <select id="filter-ciudad">
+            <option value="">Todas</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label>Estado:</label>
+          <select id="filter-estado">
+            <option value="">Todos</option>
+            <option value="Pendiente">Pendiente</option>
+            <option value="Alta Prioridad">Alta Prioridad</option>
+            <option value="Contactado">Contactado</option>
+            <option value="Confirmado">Confirmado</option>
+          </select>
+        </div>
+        <div class="seguimientos-count" id="seguimientos-count"></div>
+      </div>
+      <div class="seguimientos-table-wrap">
+        <table class="seguimientos-table" id="seguimientos-table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Institución</th>
+              <th>Ciudad</th>
+              <th>Tipo</th>
+              <th>Teléfono</th>
+              <th>Estado</th>
+              <th>Último Contacto</th>
+              <th>Próximo Seguimiento</th>
+              <th>Notas</th>
+            </tr>
+          </thead>
+          <tbody id="seguimientos-tbody">
+            <!-- populated by JS -->
+          </tbody>
+        </table>
+      </div>
+      <div class="dossier-tip">
+        <div class="tip-icon">💡</div>
+        <div class="tip-text">
+          <strong>Estrategia de dossier:</strong> Enviar entre febrero y abril. Las programaciones de junio (Día de la República Italiana) y del segundo semestre se definen con varios meses de anticipación.
+          El dossier debe incluir: foto profesional · repertorio · duración · requerimientos técnicos · videos de 2-3 interpretaciones.
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <p>Roadmap Artístico · Entre Ríos · Planificación Lírica</p>
+      <p class="footer-note">Actualizado: <span id="footer-fecha"></span></p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,533 @@
+{
+  "artista": {
+    "nombre": "Cantante Lírico",
+    "tipo": "Tenor / Barítono",
+    "provincia": "Entre Ríos",
+    "repertorios": [
+      "Ópera",
+      "Opereta",
+      "Canzoneta Italiana",
+      "Música Italiana",
+      "Música Sacra",
+      "Música Patriótica"
+    ]
+  },
+  "objetivo": {
+    "eventosMinimosAnuales": 12,
+    "eventosPorEstacion": 3,
+    "ingresoObjetivoMensual": 50000
+  },
+  "potencial": {
+    "Paraná": 10,
+    "Gualeguay": 10,
+    "Concordia": 9,
+    "Concepción del Uruguay": 9,
+    "Diamante": 8,
+    "Crespo": 8,
+    "Colón": 7,
+    "Chajarí": 7,
+    "Victoria": 7,
+    "San José": 7,
+    "Maciá": 6,
+    "Urdinarrain": 6
+  },
+  "eventosRecurrentes": {
+    "subcategorias": [
+      "Patrios",
+      "Italianidad",
+      "Religiosos",
+      "Municipales",
+      "Fiestas Nacionales",
+      "Aniversarios de Ciudades",
+      "Casamientos"
+    ]
+  },
+  "repertorio": {
+    "italiano": [
+      "O Sole Mio",
+      "Santa Lucia",
+      "Funicolì Funiculà",
+      "Torna a Surriento",
+      "Marechiare",
+      "Core 'ngrato"
+    ],
+    "lirico": [
+      "Nessun Dorma (Puccini)",
+      "La Donna è Mobile (Verdi)",
+      "Questa o quella (Verdi)",
+      "E lucevan le stelle (Puccini)",
+      "Una furtiva lagrima (Donizetti)"
+    ],
+    "sacro": [
+      "Ave María (Schubert)",
+      "Ave María (Gounod)",
+      "Panis Angelicus (Franck)"
+    ],
+    "patriotico": [
+      "Himno Nacional Argentino",
+      "Aurora",
+      "Marcha de San Lorenzo",
+      "Inno di Mameli (Italia)"
+    ]
+  },
+  "localidades": [
+    {
+      "nombre": "Paraná",
+      "prioridad": 1,
+      "nivelA": true,
+      "descripcion": "Capital provincial. Mayor concentración de instituciones italianas activas de la provincia.",
+      "instituciones": [
+        {
+          "nombre": "Sociedad Italiana de Paraná",
+          "tipo": "Colectividad Italiana",
+          "telefono": "0343-431-0489",
+          "estado": "Pendiente",
+          "descripcion": "Institución con más de 160 años. Organiza cenas aniversario, actos institucionales y tiene vínculo con autoridades provinciales.",
+          "oportunidades": ["Día de la República Italiana", "Semana de la Italianidad", "Veladas Líricas", "Cenas Aniversario"]
+        },
+        {
+          "nombre": "Dante Alighieri Paraná",
+          "tipo": "Instituto Cultural",
+          "estado": "Pendiente",
+          "descripcion": "Activa en difusión de lengua y cultura italiana.",
+          "oportunidades": ["Conciertos temáticos", "Eventos culturales", "Encuentros italianos"]
+        },
+        {
+          "nombre": "Asociación Verdiana",
+          "tipo": "Colectividad Italiana",
+          "estado": "Pendiente",
+          "oportunidades": ["Conciertos Verdi", "Veladas operísticas"]
+        },
+        {
+          "nombre": "Centro Piemontés",
+          "tipo": "Colectividad Regional",
+          "estado": "Pendiente",
+          "oportunidades": ["Eventos regionales", "Aniversarios"]
+        },
+        {
+          "nombre": "Centro Ligure",
+          "tipo": "Colectividad Regional",
+          "estado": "Pendiente",
+          "oportunidades": ["Eventos institucionales"]
+        },
+        {
+          "nombre": "Sociedad Friulana",
+          "tipo": "Colectividad Regional",
+          "estado": "Pendiente",
+          "oportunidades": ["Encuentros culturales"]
+        },
+        {
+          "nombre": "Unión de Colectividades",
+          "tipo": "Coordinadora",
+          "estado": "Pendiente",
+          "descripcion": "Agrupa representantes de múltiples colectividades italianas de la provincia.",
+          "oportunidades": ["Actos conjuntos", "2 de Junio"]
+        }
+      ],
+      "eventosClave": [
+        { "nombre": "Fiesta Nacional del Mate", "mes": "Marzo", "tipo": "Fiesta Nacional" },
+        { "nombre": "Día de la República Italiana", "mes": "Junio", "tipo": "Institucional" },
+        { "nombre": "Semana de la Italianidad", "mes": "Junio", "tipo": "Cultural" },
+        { "nombre": "Veladas Líricas Verdi / Puccini", "mes": "Todo el año", "tipo": "Artístico" },
+        { "nombre": "Cenas Aniversario", "mes": "Variable", "tipo": "Institucional" }
+      ]
+    },
+    {
+      "nombre": "Gualeguay",
+      "prioridad": 1,
+      "nivelA": true,
+      "destacado": "🏛️ Teatro Italia — Patrimonio Histórico Nacional",
+      "descripcion": "La Sociedad Italia posee el Teatro Italia, declarado de interés histórico nacional. Para un cantante lírico probablemente sea uno de los lugares más compatibles de toda la provincia.",
+      "instituciones": [
+        {
+          "nombre": "Teatro Italia",
+          "tipo": "Teatro / Centro Cultural",
+          "estado": "Alta Prioridad",
+          "descripcion": "Teatro histórico declarado de interés nacional. Funciona como centro cultural regional desde hace décadas. Escenario ideal para canzonetas italianas y repertorio lírico.",
+          "oportunidades": ["Recital Lírico", "Canzonetas Italianas", "Temporada cultural", "Velada operística"]
+        }
+      ],
+      "eventosClave": [
+        { "nombre": "Recitales Líricos", "mes": "Todo el año", "tipo": "Artístico" },
+        { "nombre": "Conciertos Italianos", "mes": "Junio", "tipo": "Cultural" },
+        { "nombre": "Velada de Canzonetas", "mes": "Variable", "tipo": "Artístico" }
+      ]
+    },
+    {
+      "nombre": "Concordia",
+      "prioridad": 1,
+      "nivelA": false,
+      "descripcion": "Ciudad con múltiples entidades italianas funcionando simultáneamente.",
+      "instituciones": [
+        {
+          "nombre": "Asociación Dante Alighieri Concordia",
+          "tipo": "Instituto Cultural",
+          "telefono": "0345 15-405-0550",
+          "estado": "Pendiente",
+          "descripcion": "Muy activa y con sede propia. Más de 80 años difundiendo cultura italiana.",
+          "rating": "5.0",
+          "oportunidades": ["Galas Italianas", "Eventos de la Dante", "Conciertos temáticos"]
+        },
+        {
+          "nombre": "Sociedad Italiana Unión Meridional",
+          "tipo": "Colectividad Italiana",
+          "telefono": "0345-421-7576",
+          "estado": "Pendiente",
+          "descripcion": "Institución histórica de la ciudad.",
+          "rating": "4.5",
+          "oportunidades": ["Aniversarios institucionales", "Encuentros de descendientes"]
+        },
+        {
+          "nombre": "Círculo Italiano",
+          "tipo": "Club Cultural",
+          "telefono": "0345-421-3327",
+          "estado": "Pendiente",
+          "rating": "4.0",
+          "oportunidades": ["Eventos culturales", "Reuniones sociales"]
+        }
+      ],
+      "eventosClave": [
+        { "nombre": "Galas Italianas", "mes": "Junio", "tipo": "Cultural" },
+        { "nombre": "Festivales Gastronómicos Italianos", "mes": "Variable", "tipo": "Gastronómico" },
+        { "nombre": "Encuentros de Descendientes", "mes": "Variable", "tipo": "Comunitario" },
+        { "nombre": "Conciertos de Música Napolitana", "mes": "Variable", "tipo": "Artístico" }
+      ]
+    },
+    {
+      "nombre": "Concepción del Uruguay",
+      "prioridad": 1,
+      "nivelA": false,
+      "descripcion": "Ciudad histórica con instituciones italianas de larga trayectoria.",
+      "instituciones": [
+        {
+          "nombre": "Sociedad Italiana Benevolenza",
+          "tipo": "Colectividad Italiana",
+          "estado": "Pendiente",
+          "descripcion": "Una de las sociedades italianas históricas más importantes de Entre Ríos.",
+          "rating": "3.9",
+          "oportunidades": ["Actos de inmigración italiana", "Eventos culturales"]
+        },
+        {
+          "nombre": "Sociedad Dante Alighieri / Escuela de Italiano",
+          "tipo": "Instituto Cultural",
+          "telefono": "03442-678831",
+          "estado": "Pendiente",
+          "descripcion": "Comité oficial Dante Alighieri activo en la ciudad.",
+          "oportunidades": ["Encuentros educativos", "Conciertos culturales"]
+        },
+        {
+          "nombre": "Club República de Italia",
+          "tipo": "Club Cultural",
+          "telefono": "03442-679596",
+          "estado": "Pendiente",
+          "rating": "4.7",
+          "oportunidades": ["Eventos culturales", "Presentaciones en salas"]
+        }
+      ],
+      "eventosClave": [
+        { "nombre": "Actos por Inmigración Italiana", "mes": "Variable", "tipo": "Institucional" },
+        { "nombre": "Encuentros Educativos", "mes": "Variable", "tipo": "Educativo" },
+        { "nombre": "Presentaciones en Teatros", "mes": "Variable", "tipo": "Artístico" }
+      ]
+    },
+    {
+      "nombre": "Diamante",
+      "prioridad": 1,
+      "nivelA": true,
+      "descripcion": "Cerca de Paraná. Sede activa de Dante Alighieri. Menos competencia, alta descendencia italiana y movimiento cultural. Encaja muy bien para una velada italiana o lírica.",
+      "instituciones": [
+        {
+          "nombre": "Sociedad Dante Alighieri Diamante",
+          "tipo": "Instituto Cultural",
+          "estado": "Pendiente",
+          "descripcion": "Sede activa con movimiento cultural. Ciudad con mucha descendencia italiana y turismo regional.",
+          "oportunidades": ["Velada italiana", "Concierto lírico", "Eventos culturales", "Día de la República Italiana"]
+        }
+      ],
+      "eventosClave": [
+        { "nombre": "Festival Nacional de Jineteada y Folklore", "mes": "Variable", "tipo": "Fiesta Nacional" },
+        { "nombre": "Día de la República Italiana", "mes": "Junio", "tipo": "Institucional" },
+        { "nombre": "Velada Italiana / Lírica", "mes": "Variable", "tipo": "Artístico" }
+      ]
+    },
+    {
+      "nombre": "Crespo",
+      "prioridad": 1,
+      "nivelA": true,
+      "descripcion": "Subida de prioridad. Además de la actividad italiana cuenta con la Fiesta Nacional de la Avicultura, mucho asociativismo, público familiar y cercanía a Paraná.",
+      "instituciones": [
+        {
+          "nombre": "Sociedad Italiana de Crespo",
+          "tipo": "Colectividad Italiana",
+          "estado": "Pendiente",
+          "descripcion": "Activa en la red de asociaciones italianas de Entre Ríos. Ciudad de fuerte asociativismo.",
+          "oportunidades": ["Actos institucionales", "Eventos culturales", "Día de la República Italiana"]
+        }
+      ],
+      "eventosClave": [
+        { "nombre": "Fiesta Nacional de la Avicultura", "mes": "Mayo", "tipo": "Fiesta Nacional" },
+        { "nombre": "Día de la República Italiana", "mes": "Junio", "tipo": "Institucional" },
+        { "nombre": "Eventos municipales", "mes": "Variable", "tipo": "Municipal" }
+      ]
+    },
+    {
+      "nombre": "Colón",
+      "prioridad": 2,
+      "nivelA": false,
+      "descripcion": "Ciudad turística con comité oficial de la red internacional Dante Alighieri.",
+      "instituciones": [
+        {
+          "nombre": "Dante Alighieri Colón",
+          "tipo": "Instituto Cultural",
+          "estado": "Pendiente",
+          "descripcion": "Punto estratégico por el turismo que recibe la ciudad.",
+          "oportunidades": ["Conciertos para turistas", "Eventos culturales"]
+        }
+      ],
+      "eventosClave": [
+        { "nombre": "Temporada turística", "mes": "Variable", "tipo": "Turístico" },
+        { "nombre": "Eventos culturales de la Dante", "mes": "Variable", "tipo": "Cultural" }
+      ]
+    },
+    {
+      "nombre": "San José",
+      "prioridad": 2,
+      "nivelA": true,
+      "descripcion": "Muy cerca de Colón. Fuerte herencia de inmigración europea. Organiza eventos culturales propios. La colonia histórica hace que sea una ciudad para investigar más.",
+      "instituciones": [
+        {
+          "nombre": "Municipalidad de San José – Cultura",
+          "tipo": "Municipal",
+          "estado": "Pendiente",
+          "descripcion": "Tradición consolidada de celebraciones estudiantiles y comunitarias. Colonia histórica de inmigrantes europeos.",
+          "oportunidades": ["Eventos comunitarios", "Actos institucionales", "Festividades patronales"]
+        }
+      ],
+      "eventosClave": [
+        { "nombre": "Fiestas comunitarias coloniales", "mes": "Variable", "tipo": "Cultural" },
+        { "nombre": "Actos patronales", "mes": "Variable", "tipo": "Religioso" },
+        { "nombre": "Celebraciones estudiantiles", "mes": "Variable", "tipo": "Municipal" }
+      ]
+    },
+    {
+      "nombre": "Victoria",
+      "prioridad": 2,
+      "nivelA": false,
+      "descripcion": "Representantes presentes en reuniones provinciales de asociaciones italianas.",
+      "instituciones": [
+        {
+          "nombre": "Sociedad Italiana de Victoria",
+          "tipo": "Colectividad Italiana",
+          "estado": "Pendiente",
+          "oportunidades": ["Eventos comunitarios", "Actos institucionales"]
+        }
+      ],
+      "eventosClave": [
+        { "nombre": "Actos institucionales italianos", "mes": "Variable", "tipo": "Institucional" }
+      ]
+    },
+    {
+      "nombre": "Chajarí",
+      "prioridad": 2,
+      "nivelA": true,
+      "descripcion": "Sorprende con una sede activa de Dante Alighieri. Suele quedar fuera del radar cultural provincial pero tiene mucha descendencia italiana, turismo regional y eventos municipales frecuentes.",
+      "instituciones": [
+        {
+          "nombre": "Dante Alighieri Chajarí",
+          "tipo": "Instituto Cultural",
+          "estado": "Pendiente",
+          "descripcion": "Sede activa inesperada. Ciudad con mucha descendencia italiana y menos competencia artística.",
+          "oportunidades": ["Velada italiana", "Conciertos culturales", "Eventos municipales"]
+        }
+      ],
+      "eventosClave": [
+        { "nombre": "Día de la República Italiana", "mes": "Junio", "tipo": "Institucional" },
+        { "nombre": "Eventos municipales", "mes": "Variable", "tipo": "Municipal" },
+        { "nombre": "Turismo regional", "mes": "Variable", "tipo": "Turístico" }
+      ]
+    },
+    {
+      "nombre": "Maciá",
+      "prioridad": 3,
+      "nivelA": false,
+      "descripcion": "Sede de la Fiesta Nacional de la Apicultura. Potencial en inauguraciones, actos y galas protocolares.",
+      "instituciones": [
+        {
+          "nombre": "Municipalidad de Maciá – Cultura",
+          "tipo": "Municipal",
+          "estado": "Pendiente",
+          "descripcion": "Festividad nacional con actos institucionales, galas y cenas protocolares.",
+          "oportunidades": ["Acto inaugural de la fiesta", "Gala protocolar", "Cena institucional"]
+        }
+      ],
+      "eventosClave": [
+        { "nombre": "Fiesta Nacional de la Apicultura", "mes": "Abril", "tipo": "Fiesta Nacional" },
+        { "nombre": "Actos municipales", "mes": "Variable", "tipo": "Municipal" }
+      ]
+    },
+    {
+      "nombre": "Urdinarrain",
+      "prioridad": 3,
+      "nivelA": false,
+      "descripcion": "Sede de la Fiesta Provincial del Caballo. Oportunidad en el segmento institucional: apertura oficial, actos protocolares, himnos y autoridades presentes.",
+      "instituciones": [
+        {
+          "nombre": "Municipalidad de Urdinarrain – Cultura",
+          "tipo": "Municipal",
+          "estado": "Pendiente",
+          "descripcion": "Fiesta provincial con actos de apertura, protocolo e himnos institucionales.",
+          "oportunidades": ["Acto de apertura", "Himno Nacional", "Gala inaugural"]
+        }
+      ],
+      "eventosClave": [
+        { "nombre": "Fiesta Provincial del Caballo", "mes": "Variable", "tipo": "Fiesta Provincial" },
+        { "nombre": "Actos protocolares", "mes": "Variable", "tipo": "Municipal" }
+      ]
+    }
+  ],
+  "calendarioOculto": [
+    {
+      "mes": "Marzo",
+      "estacion": "Verano tardío",
+      "eventos": [
+        { "nombre": "Fiesta Nacional del Mate", "ciudad": "Paraná", "tipo": "Fiesta Nacional", "subcategoria": "Fiestas Nacionales" }
+      ],
+      "acciones": ["Confirmar agenda junio", "Envío de dossier"]
+    },
+    {
+      "mes": "Abril",
+      "estacion": "Otoño",
+      "eventos": [
+        { "nombre": "Fiesta Nacional de la Apicultura", "ciudad": "Maciá", "tipo": "Fiesta Nacional", "subcategoria": "Fiestas Nacionales" }
+      ],
+      "acciones": ["Semana Santa — contactar iglesias", "Cierre de agenda junio"]
+    },
+    {
+      "mes": "Mayo",
+      "estacion": "Otoño",
+      "eventos": [
+        { "nombre": "25 de Mayo", "ciudad": "Toda la provincia", "tipo": "Patrio", "subcategoria": "Patrios" },
+        { "nombre": "Fiesta Nacional de la Avicultura", "ciudad": "Crespo", "tipo": "Fiesta Nacional", "subcategoria": "Fiestas Nacionales" }
+      ],
+      "acciones": ["Municipios: confirmar 25 de Mayo", "Preparar agenda italiana"]
+    },
+    {
+      "mes": "Junio",
+      "estacion": "Invierno",
+      "eventos": [
+        { "nombre": "Día de la República Italiana", "ciudad": "Toda la provincia", "tipo": "Italianidad", "subcategoria": "Italianidad" },
+        { "nombre": "Semana de la Italianidad", "ciudad": "Paraná / Concordia", "tipo": "Italianidad", "subcategoria": "Italianidad" },
+        { "nombre": "20 de Junio — Día de la Bandera", "ciudad": "Toda la provincia", "tipo": "Patrio", "subcategoria": "Patrios" }
+      ],
+      "acciones": ["Máxima actividad italiana", "Actos de Bandera en municipios"]
+    },
+    {
+      "mes": "Julio",
+      "estacion": "Invierno",
+      "eventos": [
+        { "nombre": "9 de Julio — Independencia", "ciudad": "Toda la provincia", "tipo": "Patrio", "subcategoria": "Patrios" },
+        { "nombre": "Galas patrias", "ciudad": "Municipios", "tipo": "Municipal", "subcategoria": "Municipales" }
+      ],
+      "acciones": ["Confirmar agenda agosto", "Aniversarios de localidades"]
+    },
+    {
+      "mes": "Agosto",
+      "estacion": "Invierno",
+      "eventos": [
+        { "nombre": "17 de Agosto — San Martín", "ciudad": "Toda la provincia", "tipo": "Patrio", "subcategoria": "Patrios" },
+        { "nombre": "Aniversarios de localidades", "ciudad": "Variable", "tipo": "Municipal", "subcategoria": "Aniversarios de Ciudades" }
+      ],
+      "acciones": ["Actos Sanmartinianos", "Cerrar patronales septiembre-octubre"]
+    },
+    {
+      "mes": "Septiembre",
+      "estacion": "Primavera",
+      "eventos": [
+        { "nombre": "Fiestas Patronales", "ciudad": "Variable", "tipo": "Religioso", "subcategoria": "Religiosos" },
+        { "nombre": "Eventos de colectividades", "ciudad": "Variable", "tipo": "Cultural", "subcategoria": "Municipales" }
+      ],
+      "acciones": ["Patronales", "Centros culturales"]
+    },
+    {
+      "mes": "Octubre",
+      "estacion": "Primavera",
+      "eventos": [
+        { "nombre": "Fiestas Patronales tardías", "ciudad": "Variable", "tipo": "Religioso", "subcategoria": "Religiosos" },
+        { "nombre": "Encuentros de colectividades", "ciudad": "Variable", "tipo": "Cultural", "subcategoria": "Municipales" }
+      ],
+      "acciones": ["Confirmar agenda Navidad", "Iglesias — misas especiales"]
+    },
+    {
+      "mes": "Diciembre",
+      "estacion": "Verano",
+      "eventos": [
+        { "nombre": "Navidad — Misas de Gallo", "ciudad": "Toda la provincia", "tipo": "Religioso", "subcategoria": "Religiosos" },
+        { "nombre": "Conciertos sacros navideños", "ciudad": "Variable", "tipo": "Religioso", "subcategoria": "Religiosos" }
+      ],
+      "acciones": ["Máxima actividad sacra", "Iglesias, casamientos de fin de año"]
+    }
+  ],
+  "calendarioAnual": [
+    {
+      "estacion": "Verano",
+      "icono": "☀️",
+      "meses": "Enero - Febrero",
+      "acciones": ["Envío de dossier a instituciones", "Confirmación de eventos de junio"],
+      "eventos": ["Casamientos de temporada", "Eventos privados"]
+    },
+    {
+      "estacion": "Otoño",
+      "icono": "🍂",
+      "meses": "Marzo - Mayo",
+      "acciones": ["Cierre de agenda para junio", "Contacto con iglesias para Semana Santa"],
+      "eventos": ["Fiesta del Mate (Paraná)", "Apicultura (Maciá)", "Semana Santa", "25 de Mayo"]
+    },
+    {
+      "estacion": "Invierno",
+      "icono": "❄️",
+      "meses": "Junio - Agosto",
+      "acciones": ["Ejecución de temporada italiana", "Cierre agenda segundo semestre"],
+      "eventos": ["2 de Junio — República Italiana", "Semana Italianidad", "20 de Junio", "9 de Julio", "17 de Agosto"]
+    },
+    {
+      "estacion": "Primavera",
+      "icono": "🌸",
+      "meses": "Septiembre - Diciembre",
+      "acciones": ["Festivales patronales", "Agenda navideña y sacra"],
+      "eventos": ["Fiestas Patronales", "Aniversarios de ciudades", "Navidad", "Conciertos sacros"]
+    }
+  ],
+  "mercadosAlternativos": [
+    {
+      "tipo": "Municipios",
+      "icono": "🏛️",
+      "descripcion": "Cada municipio necesita repertorio patriótico para fechas cívicas anuales. Contactar: Dirección de Cultura, Ceremonial y Protocolo, Turismo.",
+      "contactos": ["Dirección de Cultura", "Ceremonial y Protocolo", "Turismo", "Intendencia"],
+      "eventos": [
+        { "nombre": "25 de Mayo", "mes": "Mayo" },
+        { "nombre": "20 de Junio", "mes": "Junio" },
+        { "nombre": "9 de Julio", "mes": "Julio" },
+        { "nombre": "17 de Agosto", "mes": "Agosto" },
+        { "nombre": "Aniversarios de ciudades", "mes": "Variable" }
+      ]
+    },
+    {
+      "tipo": "Iglesias",
+      "icono": "⛪",
+      "descripcion": "Nicho específico para tenor / barítono con repertorio sacro. Alta demanda en tres períodos clave del año.",
+      "eventos": [
+        { "nombre": "Semana Santa", "mes": "Marzo/Abril" },
+        { "nombre": "Fiestas Patronales", "mes": "Variable" },
+        { "nombre": "Navidad", "mes": "Diciembre" }
+      ],
+      "repertorioIdeal": ["Ave María", "Panis Angelicus", "Schubert", "Gounod"]
+    },
+    {
+      "tipo": "Casamientos",
+      "icono": "💍",
+      "rentabilidad": "Alta",
+      "descripcion": "Mercado más rentable y con demanda constante. Solo con 4 piezas clave se cubre el 90% de las solicitudes.",
+      "repertorioIdeal": ["Ave María", "Panis Angelicus", "O Sole Mio", "Nessun Dorma (fragmento)"]
+    }
+  ]
+}
