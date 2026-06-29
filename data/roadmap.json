@@ -87,7 +87,7 @@
       "descripcion": "Capital provincial. Mayor concentración de instituciones italianas activas de la provincia.",
       "instituciones": [
         {
-          "nombre": "Sociedad Italiana de Paraná",
+          "nombre": "Sociedad Italiana Paraná de Socorros Mutuos",
           "tipo": "Colectividad Italiana",
           "telefono": "0343-431-0489",
           "estado": "Pendiente",
@@ -117,13 +117,13 @@
           "nombre": "Centro Ligure",
           "tipo": "Colectividad Regional",
           "estado": "Pendiente",
-          "oportunidades": ["Eventos institucionales"]
+          "oportunidades": ["Eventos institucionales regionales", "Aniversarios"]
         },
         {
           "nombre": "Sociedad Friulana",
           "tipo": "Colectividad Regional",
           "estado": "Pendiente",
-          "oportunidades": ["Encuentros culturales"]
+          "oportunidades": ["Encuentros culturales y gastronómicos"]
         },
         {
           "nombre": "Unión de Colectividades",
@@ -155,12 +155,31 @@
           "estado": "Alta Prioridad",
           "descripcion": "Teatro histórico declarado de interés nacional. Funciona como centro cultural regional desde hace décadas. Escenario ideal para canzonetas italianas y repertorio lírico.",
           "oportunidades": ["Recital Lírico", "Canzonetas Italianas", "Temporada cultural", "Velada operística"]
+        },
+        {
+          "nombre": "Dante Alighieri Gualeguay",
+          "tipo": "Instituto Cultural",
+          "estado": "Pendiente",
+          "oportunidades": ["Eventos culturales", "Difusión italiana"]
+        },
+        {
+          "nombre": "Centro Véneto de Gualeguay",
+          "tipo": "Colectividad Regional",
+          "estado": "Pendiente",
+          "oportunidades": ["Encuentros regionales", "Eventos culturales"]
+        },
+        {
+          "nombre": "Parroquia San Antonio",
+          "tipo": "Iglesia",
+          "estado": "Pendiente",
+          "oportunidades": ["Fiestas Patronales", "Misas especiales"]
         }
       ],
       "eventosClave": [
         { "nombre": "Recitales Líricos", "mes": "Todo el año", "tipo": "Artístico" },
         { "nombre": "Conciertos Italianos", "mes": "Junio", "tipo": "Cultural" },
-        { "nombre": "Velada de Canzonetas", "mes": "Variable", "tipo": "Artístico" }
+        { "nombre": "Velada de Canzonetas", "mes": "Primavera/Verano", "tipo": "Artístico" },
+        { "nombre": "Fiestas Patronales San Antonio", "mes": "Junio", "tipo": "Religioso" }
       ]
     },
     {
@@ -195,13 +214,34 @@
           "estado": "Pendiente",
           "rating": "4.0",
           "oportunidades": ["Eventos culturales", "Reuniones sociales"]
+        },
+        {
+          "nombre": "Municipalidad de Concordia",
+          "tipo": "Municipal",
+          "estado": "Pendiente",
+          "descripcion": "Dirección de Cultura, Turismo y Ceremonial. Contacto para fechas patrias y actos oficiales.",
+          "oportunidades": ["Fechas patrias", "Actos protocolares", "Eventos municipales"]
+        },
+        {
+          "nombre": "Catedral San Antonio de Padua",
+          "tipo": "Catedral",
+          "estado": "Pendiente",
+          "oportunidades": ["Fiestas Patronales", "Conciertos sacros"]
+        },
+        {
+          "nombre": "Teatro Gran Odeón",
+          "tipo": "Teatro",
+          "telefono": "0345-422-6655",
+          "estado": "Pendiente",
+          "oportunidades": ["Recitales líricos", "Presentaciones en sala", "Temporada cultural"]
         }
       ],
       "eventosClave": [
         { "nombre": "Galas Italianas", "mes": "Junio", "tipo": "Cultural" },
-        { "nombre": "Festivales Gastronómicos Italianos", "mes": "Variable", "tipo": "Gastronómico" },
+        { "nombre": "Festivales Gastronómicos Italianos", "mes": "Septiembre/Octubre", "tipo": "Gastronómico" },
         { "nombre": "Encuentros de Descendientes", "mes": "Variable", "tipo": "Comunitario" },
-        { "nombre": "Conciertos de Música Napolitana", "mes": "Variable", "tipo": "Artístico" }
+        { "nombre": "Conciertos de Música Napolitana", "mes": "Primavera", "tipo": "Artístico" },
+        { "nombre": "Fiestas Patronales San Antonio", "mes": "Junio", "tipo": "Religioso" }
       ]
     },
     {
@@ -212,7 +252,7 @@
       "descripcion": "Ciudad histórica con instituciones italianas de larga trayectoria.",
       "instituciones": [
         {
-          "nombre": "Sociedad Italiana Benevolenza",
+          "nombre": "Sociedad Italiana La Benevolenza",
           "tipo": "Colectividad Italiana",
           "estado": "Pendiente",
           "descripcion": "Una de las sociedades italianas históricas más importantes de Entre Ríos.",
@@ -234,12 +274,32 @@
           "estado": "Pendiente",
           "rating": "4.7",
           "oportunidades": ["Eventos culturales", "Presentaciones en salas"]
+        },
+        {
+          "nombre": "Municipalidad de Concepción del Uruguay",
+          "tipo": "Municipal",
+          "estado": "Pendiente",
+          "descripcion": "Dirección de Cultura, Turismo y Ceremonial.",
+          "oportunidades": ["Fechas patrias", "Actos protocolares", "Eventos cívicos"]
+        },
+        {
+          "nombre": "Basílica Inmaculada Concepción",
+          "tipo": "Basílica",
+          "estado": "Pendiente",
+          "oportunidades": ["Fiestas Patronales", "Conciertos sacros", "Eventos corales"]
+        },
+        {
+          "nombre": "Auditorio Carlos María Scelzi",
+          "tipo": "Auditorio",
+          "estado": "Pendiente",
+          "oportunidades": ["Recitales líricos", "Conciertos de cámara", "Presentaciones culturales"]
         }
       ],
       "eventosClave": [
-        { "nombre": "Actos por Inmigración Italiana", "mes": "Variable", "tipo": "Institucional" },
+        { "nombre": "Actos por Inmigración Italiana", "mes": "Septiembre", "tipo": "Institucional" },
         { "nombre": "Encuentros Educativos", "mes": "Variable", "tipo": "Educativo" },
-        { "nombre": "Presentaciones en Teatros", "mes": "Variable", "tipo": "Artístico" }
+        { "nombre": "Presentaciones en Teatros y Auditorios", "mes": "Todo el año", "tipo": "Artístico" },
+        { "nombre": "Fiestas Patronales Inmaculada Concepción", "mes": "Diciembre", "tipo": "Religioso" }
       ]
     },
     {
@@ -255,12 +315,18 @@
           "estado": "Pendiente",
           "descripcion": "Sede activa con movimiento cultural. Ciudad con mucha descendencia italiana y turismo regional.",
           "oportunidades": ["Velada italiana", "Concierto lírico", "Eventos culturales", "Día de la República Italiana"]
+        },
+        {
+          "nombre": "Sociedad Italiana Diamante",
+          "tipo": "Colectividad Italiana",
+          "estado": "Pendiente",
+          "oportunidades": ["Eventos institucionales", "Encuentros de descendientes"]
         }
       ],
       "eventosClave": [
-        { "nombre": "Festival Nacional de Jineteada y Folklore", "mes": "Variable", "tipo": "Fiesta Nacional" },
+        { "nombre": "Festival Nacional de Jineteada y Folklore", "mes": "Enero", "tipo": "Fiesta Nacional" },
         { "nombre": "Día de la República Italiana", "mes": "Junio", "tipo": "Institucional" },
-        { "nombre": "Velada Italiana / Lírica", "mes": "Variable", "tipo": "Artístico" }
+        { "nombre": "Velada Italiana / Lírica", "mes": "Junio", "tipo": "Artístico" }
       ]
     },
     {
@@ -336,11 +402,11 @@
           "nombre": "Sociedad Italiana de Victoria",
           "tipo": "Colectividad Italiana",
           "estado": "Pendiente",
-          "oportunidades": ["Eventos comunitarios", "Actos institucionales"]
+          "oportunidades": ["Cenas aniversario", "Actos institucionales italianos", "Eventos comunitarios"]
         }
       ],
       "eventosClave": [
-        { "nombre": "Actos institucionales italianos", "mes": "Variable", "tipo": "Institucional" }
+        { "nombre": "Actos institucionales italianos", "mes": "Junio", "tipo": "Institucional" }
       ]
     },
     {
@@ -455,7 +521,7 @@
           "nombre": "Sociedad Italiana Estrella de Italia",
           "tipo": "Sociedad Italiana",
           "estado": "Pendiente",
-          "oportunidades": ["Música", "Cultura", "Eventos"]
+          "oportunidades": ["Conciertos de música italiana", "Eventos en biblioteca", "Veladas culturales"]
         }
       ],
       "eventosClave": [
@@ -493,7 +559,7 @@
           "nombre": "Sociedad Italiana de Sunchales",
           "tipo": "Sociedad Italiana",
           "estado": "Pendiente",
-          "oportunidades": ["Eventos", "Cenas", "Salón"]
+          "oportunidades": ["Cenas aniversario", "Galas en salón social", "Eventos institucionales"]
         }
       ],
       "eventosClave": [
@@ -512,7 +578,7 @@
           "nombre": "Dante Alighieri Villa Constitucion",
           "tipo": "Dante Alighieri",
           "estado": "Pendiente",
-          "oportunidades": ["Idioma", "Educación", "Cultura"]
+          "oportunidades": ["Eventos de idioma italiano", "Muestras educativas", "Conciertos culturales"]
         }
       ],
       "eventosClave": [
@@ -551,7 +617,7 @@
           "nombre": "Instituto de Cultura Italiana Dante Alighieri",
           "tipo": "Dante Alighieri",
           "estado": "Pendiente",
-          "oportunidades": ["Idioma", "Cultura", "Encuentros"]
+          "oportunidades": ["Encuentros culturales italianos", "Conciertos de cámara", "Eventos idiomáticos"]
         }
       ],
       "eventosClave": [

@@ -10,7 +10,7 @@
     "telefono": "0343-431-0489",
     "email": "",
     "sitioWeb": "",
-    "descripcion": "",
+    "descripcion": "Institución histórica de referencia con más de 160 años de trayectoria. Organiza cenas aniversario y actos institucionales.",
     "tags": ["italia", "cultura", "mutualismo"],
     "eventosSugeridos": ["Día de la República Italiana", "Semana de la Italianidad"],
     "notas": "Institución histórica de referencia. +160 años. Organiza cenas aniversario y actos institucionales."
@@ -26,7 +26,7 @@
     "telefono": "0343-422-2536",
     "email": "",
     "sitioWeb": "",
-    "descripcion": "",
+    "descripcion": "Activa en difusión de lengua y cultura italiana. Ofrece cursos de italiano y actividades culturales.",
     "tags": ["italia", "idioma", "cultura"],
     "eventosSugeridos": ["Cursos de italiano", "Conciertos de la Dante"],
     "notas": "Cursos y actividades culturales italianas. Activa en difusión de lengua y cultura."
@@ -42,7 +42,7 @@
     "telefono": "0343-431-1199",
     "email": "",
     "sitioWeb": "",
-    "descripcion": "",
+    "descripcion": "Asociación especializada en la obra de Verdi. Muy afín al repertorio lírico y veladas operísticas.",
     "tags": ["musica", "lirica", "verdi"],
     "eventosSugeridos": ["Conciertos Verdi", "Veladas operísticas"],
     "notas": "Especialista en Verdi — muy afín al repertorio lírico."
@@ -106,7 +106,7 @@
     "telefono": "",
     "email": "",
     "sitioWeb": "",
-    "descripcion": "",
+    "descripcion": "Agrupa representantes de todas las colectividades italianas de la provincia. Contacto clave para actos conjuntos y el 2 de Junio.",
     "tags": ["colectividades", "union"],
     "eventosSugeridos": ["Encuentro de colectividades"],
     "notas": "Agrupa representantes de todas las colectividades italianas de la provincia."
@@ -138,7 +138,7 @@
     "telefono": "",
     "email": "",
     "sitioWeb": "",
-    "descripcion": "",
+    "descripcion": "Principal templo católico de Paraná. Escenario para conciertos sacros y misas especiales en Navidad y Semana Santa.",
     "tags": ["sacro", "catedral"],
     "eventosSugeridos": ["Misa de Gallo", "Conciertos sacros navideños"],
     "notas": ""
@@ -186,7 +186,7 @@
     "telefono": "0343-423-5701",
     "email": "",
     "sitioWeb": "",
-    "descripcion": "",
+    "descripcion": "Teatro municipal de Paraná. Sala histórica con programación cultural continua. Ideal para recitales líricos.",
     "tags": ["teatro", "municipal", "sala"],
     "eventosSugeridos": ["Recital Lírico", "Temporada lírica"],
     "notas": ""
@@ -250,7 +250,7 @@
     "telefono": "",
     "email": "",
     "sitioWeb": "",
-    "descripcion": "",
+    "descripcion": "Declarado de interés histórico nacional. Centro cultural regional emblemático y escenario ideal para recitales líricos y canzonetas italianas.",
     "tags": ["teatro", "historico", "patrimonio"],
     "eventosSugeridos": ["Recital Lírico", "Canzonetas Italianas", "Temporada cultural"],
     "notas": "Declarado de interés histórico nacional. Centro cultural regional de referencia para recitales líricos."
@@ -266,7 +266,7 @@
     "telefono": "0345 15-405-0550",
     "email": "",
     "sitioWeb": "",
-    "descripcion": "",
+    "descripcion": "Sede propia. Más de 80 años difundiendo cultura italiana. Muy activa en eventos culturales y galas italianas.",
     "tags": ["italia", "idioma", "cultura"],
     "eventosSugeridos": ["Galas Italianas", "Conciertos de la Dante"],
     "notas": "Sede propia. +80 años. Muy activa."
@@ -282,7 +282,7 @@
     "telefono": "0345-421-7576",
     "email": "",
     "sitioWeb": "",
-    "descripcion": "",
+    "descripcion": "Institución histórica de Concordia con actividad institucional y cenas aniversario.",
     "tags": ["italia", "sociedad"],
     "eventosSugeridos": ["Cenas aniversario"],
     "notas": "Institución histórica de la ciudad."
@@ -330,7 +330,7 @@
     "telefono": "",
     "email": "",
     "sitioWeb": "",
-    "descripcion": "",
+    "descripcion": "Catedral principal de Concordia. Escenario para conciertos sacros y fiestas patronales.",
     "tags": ["sacro", "catedral"],
     "eventosSugeridos": ["Fiestas Patronales"],
     "notas": ""
@@ -362,7 +362,7 @@
     "telefono": "0345-422-6655",
     "email": "",
     "sitioWeb": "",
-    "descripcion": "",
+    "descripcion": "Sala teatral de Concordia con programación artística. Escenario disponible para recitales líricos y presentaciones.",
     "tags": ["teatro", "sala"],
     "eventosSugeridos": ["Recitales líricos", "Presentaciones en sala"],
     "notas": ""
@@ -378,7 +378,7 @@
     "telefono": "",
     "email": "",
     "sitioWeb": "",
-    "descripcion": "",
+    "descripcion": "Una de las sociedades italianas históricas más importantes de Entre Ríos. Organiza actos por inmigración italiana.",
     "tags": ["italia", "sociedad"],
     "eventosSugeridos": ["Actos de inmigración italiana"],
     "notas": "Una de las históricas más importantes de Entre Ríos."
@@ -394,7 +394,7 @@
     "telefono": "03442-678831",
     "email": "",
     "sitioWeb": "",
-    "descripcion": "",
+    "descripcion": "Comité oficial Dante Alighieri activo en la ciudad. Difunde lengua y cultura italiana.",
     "tags": ["italia", "idioma"],
     "eventosSugeridos": ["Conciertos culturales"],
     "notas": "Comité oficial Dante Alighieri activo en la ciudad."
@@ -442,7 +442,7 @@
     "telefono": "",
     "email": "",
     "sitioWeb": "",
-    "descripcion": "",
+    "descripcion": "Basílica histórica de Concepción del Uruguay. Escenario para conciertos sacros, eventos corales y fiestas patronales.",
     "tags": ["sacro", "basilica"],
     "eventosSugeridos": ["Fiestas Patronales", "Eventos corales"],
     "notas": ""
@@ -458,7 +458,7 @@
     "telefono": "",
     "email": "",
     "sitioWeb": "",
-    "descripcion": "",
+    "descripcion": "Auditorio municipal de Concepción del Uruguay. Escenario para recitales, conciertos de cámara y eventos culturales.",
     "tags": ["auditorio", "municipal"],
     "eventosSugeridos": ["Recitales", "Conciertos de cámara"],
     "notas": ""
@@ -474,7 +474,7 @@
     "telefono": "",
     "email": "",
     "sitioWeb": "",
-    "descripcion": "",
+    "descripcion": "Comité Dante Alighieri en ciudad turística. Potencial para conciertos dirigidos a visitantes.",
     "tags": ["italia", "idioma"],
     "eventosSugeridos": ["Conciertos para turistas"],
     "notas": "Ciudad turística. Potencial adicional por afluencia de visitantes."
@@ -490,7 +490,7 @@
     "telefono": "",
     "email": "",
     "sitioWeb": "",
-    "descripcion": "",
+    "descripcion": "Activa en reuniones provinciales de asociaciones italianas. Organiza actos institucionales y eventos comunitarios.",
     "tags": ["italia", "sociedad"],
     "eventosSugeridos": [],
     "notas": "Activa en reuniones provinciales de asociaciones italianas."
@@ -506,7 +506,7 @@
     "telefono": "",
     "email": "",
     "sitioWeb": "",
-    "descripcion": "",
+    "descripcion": "Activa en la red de asociaciones italianas de Entre Ríos. Participa en la Fiesta Nacional de la Avicultura (Mayo).",
     "tags": ["italia", "sociedad"],
     "eventosSugeridos": ["Actos en el marco de la Avicultura"],
     "notas": "Fiesta Nacional de la Avicultura (Mayo). Fuerte asociativismo local."
@@ -522,7 +522,7 @@
     "telefono": "",
     "email": "",
     "sitioWeb": "",
-    "descripcion": "",
+    "descripcion": "Sede activa con movimiento cultural. Ciudad con mucha descendencia italiana y turismo regional.",
     "tags": ["italia", "idioma"],
     "eventosSugeridos": ["Velada italiana"],
     "notas": "Sede activa con movimiento cultural."
@@ -541,7 +541,7 @@
     "descripcion": "",
     "tags": ["italia", "sociedad"],
     "eventosSugeridos": [],
-    "notes": ""
+    "notas": ""
   },
   {
     "id": "er-chajari-dante",
@@ -554,7 +554,7 @@
     "telefono": "",
     "email": "",
     "sitioWeb": "",
-    "descripcion": "",
+    "descripcion": "Sede activa con mucha descendencia italiana. Menos competencia artística que ciudades mayores.",
     "tags": ["italia", "idioma"],
     "eventosSugeridos": ["Velada italiana", "Conciertos culturales"],
     "notas": "Sede activa. Mucha descendencia italiana. Menos competencia artística que ciudades mayores."
@@ -602,7 +602,7 @@
     "telefono": "",
     "email": "",
     "sitioWeb": "",
-    "descripcion": "",
+    "descripcion": "Colonia histórica de inmigrantes europeos. Fuerte tradición comunitaria y festividades coloniales.",
     "tags": ["Cultura", "Comunidad"],
     "eventosSugeridos": ["Fiestas comunitarias coloniales"],
     "notas": "Colonia histórica de inmigrantes europeos. Cerca de Colón. Fuerte tradición comunitaria."
@@ -618,7 +618,7 @@
     "telefono": "",
     "email": "",
     "sitioWeb": "",
-    "descripcion": "",
+    "descripcion": "Organiza la Fiesta Nacional de la Apicultura (Abril) con actos inaugurales y galas protocolares.",
     "tags": ["Cultura", "Apicultura"],
     "eventosSugeridos": ["Fiesta Nacional de la Apicultura"],
     "notas": "Fiesta Nacional de la Apicultura (Abril). Actos inaugurales y galas protocolares."
@@ -634,7 +634,7 @@
     "telefono": "",
     "email": "",
     "sitioWeb": "",
-    "descripcion": "",
+    "descripcion": "Organiza la Fiesta Provincial del Caballo. Segmento institucional con apertura oficial, himnos y autoridades.",
     "tags": ["Cultura", "Caballo"],
     "eventosSugeridos": ["Fiesta Provincial del Caballo"],
     "notas": "Fiesta Provincial del Caballo. Segmento institucional: apertura oficial, himnos, autoridades."
@@ -785,24 +785,24 @@
   },
   {
     "id": "cba-circulo-cba",
-    "provincia": "Cordoba",
-    "ciudad": "Cordoba Capital",
+    "provincia": "Córdoba",
+    "ciudad": "Córdoba Capital",
     "categoria": "Colectividades Italianas",
     "subcategoria": "Circulo Italiano",
-    "nombre": "Circulo Italiano de Cordoba",
+    "nombre": "Círculo Italiano de Córdoba",
     "direccion": "General Manuel Belgrano 137",
     "telefono": "+54 351 4244201",
     "email": "",
     "sitioWeb": "",
-    "descripcion": "Circulo Italiano de Córdoba (Chauffeur service)",
+    "descripcion": "Centro de referencia de la colectividad italiana en Córdoba Capital. Organiza conciertos, galas líricas y canzonetas.",
     "tags": ["italia", "eventos", "cultura", "colectividad"],
     "eventosSugeridos": ["Conciertos italianos", "Canzonetas", "Galas liricas"],
     "notas": ""
   },
   {
     "id": "cba-dante-rc",
-    "provincia": "Cordoba",
-    "ciudad": "Rio Cuarto",
+    "provincia": "Córdoba",
+    "ciudad": "Río Cuarto",
     "categoria": "Colectividades Italianas",
     "subcategoria": "Dante Alighieri",
     "nombre": "Instituto de Cultura Italiana Dante Alighieri",
