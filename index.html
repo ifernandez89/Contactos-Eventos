@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Roadmap Artístico — Entre Ríos</title>
-  <meta name="description" content="Planificación estratégica de actividad lírica en Entre Ríos. Ciudades, instituciones italianas, calendario de eventos y seguimiento de contactos." />
+  <meta name="description" content="Roadmap artístico lírico en Entre Ríos. Directorio de instituciones italianas, municipios, iglesias y espacios culturales. Calendario de eventos." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
@@ -23,7 +23,7 @@
         <li><a href="#calendario">Calendario</a></li>
         <li><a href="#mercados">Mercados</a></li>
         <li><a href="#repertorio">Repertorio</a></li>
-        <li><a href="#seguimientos">Seguimientos</a></li>
+        <li><a href="#contactos">Contactos</a></li>
       </ul>
     </div>
   </nav>
@@ -98,50 +98,19 @@
       </div>
     </section>
 
-    <!-- SEGUIMIENTOS -->
-    <section id="seguimientos" class="section">
+    <!-- DIRECTORIO DE CONTACTOS -->
+    <section id="contactos" class="section">
       <div class="section-header">
-        <h2>Seguimiento de Contactos</h2>
-        <p>El activo real no son las ciudades — es el historial de cada contacto</p>
+        <h2>Directorio de Contactos</h2>
+        <p>Instituciones por ciudad — colectividades, municipios, iglesias y espacios culturales</p>
       </div>
-      <div class="seguimientos-toolbar">
-        <div class="filter-group">
-          <label>Filtrar por ciudad:</label>
-          <select id="filter-ciudad">
-            <option value="">Todas</option>
-          </select>
+      <div class="contactos-filtros">
+        <div class="cf-group" id="cf-ciudades">
+          <!-- chips de ciudades generados por JS -->
         </div>
-        <div class="filter-group">
-          <label>Estado:</label>
-          <select id="filter-estado">
-            <option value="">Todos</option>
-            <option value="Pendiente">Pendiente</option>
-            <option value="Alta Prioridad">Alta Prioridad</option>
-            <option value="Contactado">Contactado</option>
-            <option value="Confirmado">Confirmado</option>
-          </select>
-        </div>
-        <div class="seguimientos-count" id="seguimientos-count"></div>
       </div>
-      <div class="seguimientos-table-wrap">
-        <table class="seguimientos-table" id="seguimientos-table">
-          <thead>
-            <tr>
-              <th>#</th>
-              <th>Institución</th>
-              <th>Ciudad</th>
-              <th>Tipo</th>
-              <th>Teléfono</th>
-              <th>Estado</th>
-              <th>Último Contacto</th>
-              <th>Próximo Seguimiento</th>
-              <th>Notas</th>
-            </tr>
-          </thead>
-          <tbody id="seguimientos-tbody">
-            <!-- populated by JS -->
-          </tbody>
-        </table>
+      <div id="directorio-grid">
+        <!-- populated by JS -->
       </div>
       <div class="dossier-tip">
         <div class="tip-icon">💡</div>
