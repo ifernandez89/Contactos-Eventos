@@ -1,338 +1,818 @@
-{
-  "version": "1.0",
-  "ultimaActualizacion": "2026-06-29",
-  "provincia": "Entre Ríos",
-  "ciudades": [
-    {
-      "nombre": "Paraná",
-      "prioridad": 1,
-      "categorias": {
-        "colectividades": [
-          {
-            "nombre": "Sociedad Italiana Paraná de Socorros Mutuos",
-            "tipo": "Sociedad Italiana",
-            "direccion": "San Martín 535",
-            "telefono": "0343-431-0489",
-            "notas": "Institución histórica de referencia. +160 años. Organiza cenas aniversario y actos institucionales.",
-            "eventosRelacionados": ["Día de la República Italiana", "Semana de la Italianidad"]
-          },
-          {
-            "nombre": "Dante Alighieri Paraná",
-            "tipo": "Instituto Cultural Italiano",
-            "direccion": "Italia 73",
-            "telefono": "0343-422-2536",
-            "notas": "Cursos y actividades culturales italianas. Activa en difusión de lengua y cultura."
-          },
-          {
-            "nombre": "Asociación Verdiana",
-            "tipo": "Asociación Cultural",
-            "direccion": "Perú 235",
-            "telefono": "0343-431-1199"
-          },
-          {
-            "nombre": "Centro Piemontés",
-            "tipo": "Colectividad Regional Italiana"
-          },
-          {
-            "nombre": "Centro Ligure",
-            "tipo": "Colectividad Regional Italiana"
-          },
-          {
-            "nombre": "Sociedad Friulana",
-            "tipo": "Colectividad Regional Italiana",
-            "direccion": "Villaguay 539",
-            "telefono": "0343-431-1871"
-          },
-          {
-            "nombre": "Unión de Colectividades de Entre Ríos",
-            "tipo": "Coordinadora",
-            "notas": "Agrupa representantes de todas las colectividades italianas de la provincia."
-          }
-        ],
-        "municipios": [
-          {
-            "organismo": "Municipalidad de Paraná",
-            "areasInteres": ["Dirección de Cultura", "Turismo", "Ceremonial y Protocolo"]
-          }
-        ],
-        "iglesias": [
-          { "nombre": "Catedral Metropolitana Nuestra Señora del Rosario" },
-          { "nombre": "Parroquia San Miguel Arcángel" },
-          { "nombre": "Parroquia Nuestra Señora del Carmen" }
-        ],
-        "espaciosCulturales": [
-          {
-            "nombre": "Teatro 3 de Febrero",
-            "tipo": "Teatro Municipal",
-            "telefono": "0343-423-5701"
-          }
-        ]
-      }
-    },
-    {
-      "nombre": "Gualeguay",
-      "prioridad": 1,
-      "destacado": "Teatro Italia — Patrimonio Histórico Nacional",
-      "categorias": {
-        "colectividades": [
-          {
-            "nombre": "Dante Alighieri Gualeguay",
-            "tipo": "Instituto Cultural Italiano"
-          },
-          {
-            "nombre": "Centro Véneto de Gualeguay",
-            "tipo": "Colectividad Regional Italiana"
-          }
-        ],
-        "iglesias": [
-          { "nombre": "Parroquia San Antonio" }
-        ],
-        "espaciosCulturales": [
-          {
-            "nombre": "Teatro Italia",
-            "tipo": "Teatro Histórico Nacional",
-            "notas": "Declarado de interés histórico nacional. Centro cultural regional de referencia para recitales líricos."
-          }
-        ]
-      }
-    },
-    {
-      "nombre": "Concordia",
-      "prioridad": 1,
-      "categorias": {
-        "colectividades": [
-          {
-            "nombre": "Asociación Dante Alighieri Concordia",
-            "tipo": "Instituto Cultural Italiano",
-            "telefono": "0345 15-405-0550",
-            "notas": "Sede propia. +80 años. Muy activa."
-          },
-          {
-            "nombre": "Sociedad Italiana Unión Meridional",
-            "tipo": "Sociedad Italiana",
-            "telefono": "0345-421-7576"
-          },
-          {
-            "nombre": "Círculo Italiano",
-            "tipo": "Club Cultural",
-            "telefono": "0345-421-3327"
-          }
-        ],
-        "municipios": [
-          {
-            "organismo": "Municipalidad de Concordia",
-            "areasInteres": ["Dirección de Cultura", "Turismo", "Ceremonial"]
-          }
-        ],
-        "iglesias": [
-          { "nombre": "Catedral San Antonio de Padua" },
-          { "nombre": "Capilla de los Capuchinos" }
-        ],
-        "espaciosCulturales": [
-          {
-            "nombre": "Teatro Gran Odeón",
-            "tipo": "Teatro",
-            "telefono": "0345-422-6655"
-          }
-        ]
-      }
-    },
-    {
-      "nombre": "Concepción del Uruguay",
-      "prioridad": 1,
-      "categorias": {
-        "colectividades": [
-          {
-            "nombre": "Sociedad Italiana La Benevolenza",
-            "tipo": "Sociedad Italiana",
-            "notas": "Una de las históricas más importantes de Entre Ríos."
-          },
-          {
-            "nombre": "Dante Alighieri Concepción del Uruguay",
-            "tipo": "Instituto Cultural Italiano",
-            "telefono": "03442-678831"
-          },
-          {
-            "nombre": "Club República de Italia",
-            "tipo": "Club Cultural",
-            "telefono": "03442-679596"
-          }
-        ],
-        "municipios": [
-          {
-            "organismo": "Municipalidad de Concepción del Uruguay",
-            "areasInteres": ["Dirección de Cultura", "Turismo", "Ceremonial"]
-          }
-        ],
-        "iglesias": [
-          { "nombre": "Basílica Inmaculada Concepción" }
-        ],
-        "espaciosCulturales": [
-          {
-            "nombre": "Auditorio Carlos María Scelzi",
-            "tipo": "Auditorio"
-          }
-        ]
-      }
-    },
-    {
-      "nombre": "Colón",
-      "prioridad": 2,
-      "categorias": {
-        "colectividades": [
-          {
-            "nombre": "Dante Alighieri Colón",
-            "tipo": "Instituto Cultural Italiano",
-            "notas": "Ciudad turística. Potencial adicional por afluencia de visitantes."
-          }
-        ]
-      }
-    },
-    {
-      "nombre": "Victoria",
-      "prioridad": 2,
-      "categorias": {
-        "colectividades": [
-          {
-            "nombre": "Sociedad Italiana Victoria",
-            "tipo": "Sociedad Italiana",
-            "notas": "Activa en reuniones provinciales de asociaciones italianas."
-          }
-        ]
-      }
-    },
-    {
-      "nombre": "Crespo",
-      "prioridad": 2,
-      "categorias": {
-        "colectividades": [
-          {
-            "nombre": "Sociedad Italiana Crespo",
-            "tipo": "Sociedad Italiana",
-            "notas": "Fiesta Nacional de la Avicultura (Mayo). Fuerte asociativismo local."
-          }
-        ]
-      }
-    },
-    {
-      "nombre": "Diamante",
-      "prioridad": 2,
-      "categorias": {
-        "colectividades": [
-          {
-            "nombre": "Dante Alighieri Diamante",
-            "tipo": "Instituto Cultural Italiano"
-          },
-          {
-            "nombre": "Sociedad Italiana Diamante",
-            "tipo": "Sociedad Italiana"
-          }
-        ]
-      }
-    },
-    {
-      "nombre": "Chajarí",
-      "prioridad": 2,
-      "categorias": {
-        "colectividades": [
-          {
-            "nombre": "Dante Alighieri Chajarí",
-            "tipo": "Instituto Cultural Italiano",
-            "notas": "Sede activa. Mucha descendencia italiana. Menos competencia artística que ciudades mayores."
-          }
-        ]
-      }
-    },
-    {
-      "nombre": "Nogoyá",
-      "prioridad": 2,
-      "categorias": {
-        "colectividades": [
-          {
-            "nombre": "Dante Alighieri Nogoyá",
-            "tipo": "Instituto Cultural Italiano"
-          },
-          {
-            "nombre": "Sociedad Italiana Nogoyá",
-            "tipo": "Sociedad Italiana"
-          }
-        ]
-      }
-    },
-    {
-      "nombre": "San José",
-      "prioridad": 2,
-      "categorias": {
-        "colectividades": [
-          {
-            "nombre": "Municipalidad de San José — Cultura",
-            "tipo": "Municipal",
-            "notas": "Colonia histórica de inmigrantes europeos. Cerca de Colón. Fuerte tradición comunitaria."
-          }
-        ]
-      }
-    },
-    {
-      "nombre": "Maciá",
-      "prioridad": 3,
-      "categorias": {
-        "colectividades": [
-          {
-            "nombre": "Municipalidad de Maciá — Cultura",
-            "tipo": "Municipal",
-            "notas": "Fiesta Nacional de la Apicultura (Abril). Actos inaugurales y galas protocolares."
-          }
-        ]
-      }
-    },
-    {
-      "nombre": "Urdinarrain",
-      "prioridad": 3,
-      "categorias": {
-        "colectividades": [
-          {
-            "nombre": "Municipalidad de Urdinarrain — Cultura",
-            "tipo": "Municipal",
-            "notas": "Fiesta Provincial del Caballo. Segmento institucional: apertura oficial, himnos, autoridades."
-          }
-        ]
-      }
-    },
-    {
-      "nombre": "Basavilbaso",
-      "prioridad": 3,
-      "categorias": {
-        "colectividades": [
-          {
-            "nombre": "Dante Alighieri Basavilbaso",
-            "tipo": "Instituto Cultural Italiano"
-          }
-        ]
-      }
-    },
-    {
-      "nombre": "Villa Elisa",
-      "prioridad": 3,
-      "categorias": {
-        "colectividades": [
-          {
-            "nombre": "Familia Piemontesa de Villa Elisa",
-            "tipo": "Colectividad Regional Italiana"
-          }
-        ]
-      }
-    },
-    {
-      "nombre": "Larroque",
-      "prioridad": 3,
-      "categorias": {
-        "colectividades": [
-          {
-            "nombre": "Centro Véneto de Larroque",
-            "tipo": "Colectividad Regional Italiana"
-          }
-        ]
-      }
-    }
-  ]
-}
+[
+  {
+    "id": "er-parana-socital",
+    "provincia": "Entre Ríos",
+    "ciudad": "Paraná",
+    "categoria": "Colectividades Italianas",
+    "subcategoria": "Sociedad Italiana",
+    "nombre": "Sociedad Italiana Paraná de Socorros Mutuos",
+    "direccion": "San Martín 535",
+    "telefono": "0343-431-0489",
+    "email": "",
+    "sitioWeb": "",
+    "descripcion": "",
+    "tags": ["italia", "cultura", "mutualismo"],
+    "eventosSugeridos": ["Día de la República Italiana", "Semana de la Italianidad"],
+    "notas": "Institución histórica de referencia. +160 años. Organiza cenas aniversario y actos institucionales."
+  },
+  {
+    "id": "er-parana-dante",
+    "provincia": "Entre Ríos",
+    "ciudad": "Paraná",
+    "categoria": "Colectividades Italianas",
+    "subcategoria": "Dante Alighieri",
+    "nombre": "Dante Alighieri Paraná",
+    "direccion": "Italia 73",
+    "telefono": "0343-422-2536",
+    "email": "",
+    "sitioWeb": "",
+    "descripcion": "",
+    "tags": ["italia", "idioma", "cultura"],
+    "eventosSugeridos": ["Cursos de italiano", "Conciertos de la Dante"],
+    "notas": "Cursos y actividades culturales italianas. Activa en difusión de lengua y cultura."
+  },
+  {
+    "id": "er-parana-verdiana",
+    "provincia": "Entre Ríos",
+    "ciudad": "Paraná",
+    "categoria": "Colectividades Italianas",
+    "subcategoria": "Asociación Cultural",
+    "nombre": "Asociación Verdiana",
+    "direccion": "Perú 235",
+    "telefono": "0343-431-1199",
+    "email": "",
+    "sitioWeb": "",
+    "descripcion": "",
+    "tags": ["musica", "lirica", "verdi"],
+    "eventosSugeridos": ["Conciertos Verdi", "Veladas operísticas"],
+    "notas": "Especialista en Verdi — muy afín al repertorio lírico."
+  },
+  {
+    "id": "er-parana-piemontes",
+    "provincia": "Entre Ríos",
+    "ciudad": "Paraná",
+    "categoria": "Colectividades Italianas",
+    "subcategoria": "Colectividad Regional Italiana",
+    "nombre": "Centro Piemontés",
+    "direccion": "",
+    "telefono": "",
+    "email": "",
+    "sitioWeb": "",
+    "descripcion": "",
+    "tags": ["piemonte", "regional"],
+    "eventosSugeridos": [],
+    "notas": ""
+  },
+  {
+    "id": "er-parana-ligure",
+    "provincia": "Entre Ríos",
+    "ciudad": "Paraná",
+    "categoria": "Colectividades Italianas",
+    "subcategoria": "Colectividad Regional Italiana",
+    "nombre": "Centro Ligure",
+    "direccion": "",
+    "telefono": "",
+    "email": "",
+    "sitioWeb": "",
+    "descripcion": "",
+    "tags": ["liguria", "regional"],
+    "eventosSugeridos": [],
+    "notas": ""
+  },
+  {
+    "id": "er-parana-friulana",
+    "provincia": "Entre Ríos",
+    "ciudad": "Paraná",
+    "categoria": "Colectividades Italianas",
+    "subcategoria": "Colectividad Regional Italiana",
+    "nombre": "Sociedad Friulana",
+    "direccion": "Villaguay 539",
+    "telefono": "0343-431-1871",
+    "email": "",
+    "sitioWeb": "",
+    "descripcion": "",
+    "tags": ["friuli", "regional"],
+    "eventosSugeridos": [],
+    "notas": ""
+  },
+  {
+    "id": "er-parana-union",
+    "provincia": "Entre Ríos",
+    "ciudad": "Paraná",
+    "categoria": "Colectividades Italianas",
+    "subcategoria": "Coordinadora",
+    "nombre": "Unión de Colectividades de Entre Ríos",
+    "direccion": "",
+    "telefono": "",
+    "email": "",
+    "sitioWeb": "",
+    "descripcion": "",
+    "tags": ["colectividades", "union"],
+    "eventosSugeridos": ["Encuentro de colectividades"],
+    "notas": "Agrupa representantes de todas las colectividades italianas de la provincia."
+  },
+  {
+    "id": "er-parana-muni",
+    "provincia": "Entre Ríos",
+    "ciudad": "Paraná",
+    "categoria": "Municipalidades",
+    "subcategoria": "Cultura",
+    "nombre": "Municipalidad de Paraná",
+    "direccion": "Urquiza y Corrientes",
+    "telefono": "",
+    "email": "",
+    "sitioWeb": "",
+    "descripcion": "Dirección de Cultura, Turismo, Ceremonial y Protocolo",
+    "tags": ["Dirección de Cultura", "Turismo", "Ceremonial y Protocolo"],
+    "eventosSugeridos": ["Fiesta Nacional del Mate"],
+    "notas": ""
+  },
+  {
+    "id": "er-parana-catedral",
+    "provincia": "Entre Ríos",
+    "ciudad": "Paraná",
+    "categoria": "Catedrales",
+    "subcategoria": "Iglesia Católica",
+    "nombre": "Catedral Metropolitana Nuestra Señora del Rosario",
+    "direccion": "Monte Caseros 77",
+    "telefono": "",
+    "email": "",
+    "sitioWeb": "",
+    "descripcion": "",
+    "tags": ["sacro", "catedral"],
+    "eventosSugeridos": ["Misa de Gallo", "Conciertos sacros navideños"],
+    "notas": ""
+  },
+  {
+    "id": "er-parana-miguel",
+    "provincia": "Entre Ríos",
+    "ciudad": "Paraná",
+    "categoria": "Iglesias",
+    "subcategoria": "Iglesia Católica",
+    "nombre": "Parroquia San Miguel Arcángel",
+    "direccion": "Carlos Pellegrini 350",
+    "telefono": "",
+    "email": "",
+    "sitioWeb": "",
+    "descripcion": "",
+    "tags": ["sacro", "parroquia"],
+    "eventosSugeridos": ["Fiestas Patronales"],
+    "notas": ""
+  },
+  {
+    "id": "er-parana-carmen",
+    "provincia": "Entre Ríos",
+    "ciudad": "Paraná",
+    "categoria": "Iglesias",
+    "subcategoria": "Iglesia Católica",
+    "nombre": "Parroquia Nuestra Señora del Carmen",
+    "direccion": "F. Sanchez 350",
+    "telefono": "",
+    "email": "",
+    "sitioWeb": "",
+    "descripcion": "",
+    "tags": ["sacro", "parroquia"],
+    "eventosSugeridos": ["Fiestas Patronales"],
+    "notas": ""
+  },
+  {
+    "id": "er-parana-teatro",
+    "provincia": "Entre Ríos",
+    "ciudad": "Paraná",
+    "categoria": "Teatros",
+    "subcategoria": "Teatro Municipal",
+    "nombre": "Teatro 3 de Febrero",
+    "direccion": "25 de Junio 60",
+    "telefono": "0343-423-5701",
+    "email": "",
+    "sitioWeb": "",
+    "descripcion": "",
+    "tags": ["teatro", "municipal", "sala"],
+    "eventosSugeridos": ["Recital Lírico", "Temporada lírica"],
+    "notas": ""
+  },
+  {
+    "id": "er-gualeguay-dante",
+    "provincia": "Entre Ríos",
+    "ciudad": "Gualeguay",
+    "categoria": "Colectividades Italianas",
+    "subcategoria": "Dante Alighieri",
+    "nombre": "Dante Alighieri Gualeguay",
+    "direccion": "",
+    "telefono": "",
+    "email": "",
+    "sitioWeb": "",
+    "descripcion": "",
+    "tags": ["italia", "idioma", "cultura"],
+    "eventosSugeridos": [],
+    "notas": ""
+  },
+  {
+    "id": "er-gualeguay-veneto",
+    "provincia": "Entre Ríos",
+    "ciudad": "Gualeguay",
+    "categoria": "Colectividades Italianas",
+    "subcategoria": "Colectividad Regional Italiana",
+    "nombre": "Centro Véneto de Gualeguay",
+    "direccion": "",
+    "telefono": "",
+    "email": "",
+    "sitioWeb": "",
+    "descripcion": "",
+    "tags": ["veneto", "regional"],
+    "eventosSugeridos": [],
+    "notas": ""
+  },
+  {
+    "id": "er-gualeguay-antonio",
+    "provincia": "Entre Ríos",
+    "ciudad": "Gualeguay",
+    "categoria": "Iglesias",
+    "subcategoria": "Iglesia Católica",
+    "nombre": "Parroquia San Antonio",
+    "direccion": "",
+    "telefono": "",
+    "email": "",
+    "sitioWeb": "",
+    "descripcion": "",
+    "tags": ["sacro", "parroquia"],
+    "eventosSugeridos": ["Fiestas Patronales"],
+    "notas": ""
+  },
+  {
+    "id": "er-gualeguay-teatro",
+    "provincia": "Entre Ríos",
+    "ciudad": "Gualeguay",
+    "categoria": "Teatros",
+    "subcategoria": "Teatro Histórico Nacional",
+    "nombre": "Teatro Italia",
+    "direccion": "San Antonio Norte 130",
+    "telefono": "",
+    "email": "",
+    "sitioWeb": "",
+    "descripcion": "",
+    "tags": ["teatro", "historico", "patrimonio"],
+    "eventosSugeridos": ["Recital Lírico", "Canzonetas Italianas", "Temporada cultural"],
+    "notas": "Declarado de interés histórico nacional. Centro cultural regional de referencia para recitales líricos."
+  },
+  {
+    "id": "er-concordia-dante",
+    "provincia": "Entre Ríos",
+    "ciudad": "Concordia",
+    "categoria": "Colectividades Italianas",
+    "subcategoria": "Dante Alighieri",
+    "nombre": "Asociación Dante Alighieri Concordia",
+    "direccion": "Pellegrini 435",
+    "telefono": "0345 15-405-0550",
+    "email": "",
+    "sitioWeb": "",
+    "descripcion": "",
+    "tags": ["italia", "idioma", "cultura"],
+    "eventosSugeridos": ["Galas Italianas", "Conciertos de la Dante"],
+    "notas": "Sede propia. +80 años. Muy activa."
+  },
+  {
+    "id": "er-concordia-meridional",
+    "provincia": "Entre Ríos",
+    "ciudad": "Concordia",
+    "categoria": "Colectividades Italianas",
+    "subcategoria": "Sociedad Italiana",
+    "nombre": "Sociedad Italiana Unión Meridional",
+    "direccion": "La Rioja 824",
+    "telefono": "0345-421-7576",
+    "email": "",
+    "sitioWeb": "",
+    "descripcion": "",
+    "tags": ["italia", "sociedad"],
+    "eventosSugeridos": ["Cenas aniversario"],
+    "notas": "Institución histórica de la ciudad."
+  },
+  {
+    "id": "er-concordia-circulo",
+    "provincia": "Entre Ríos",
+    "ciudad": "Concordia",
+    "categoria": "Colectividades Italianas",
+    "subcategoria": "Club Cultural",
+    "nombre": "Círculo Italiano",
+    "direccion": "Hipólito Yrigoyen 733",
+    "telefono": "0345-421-3327",
+    "email": "",
+    "sitioWeb": "",
+    "descripcion": "",
+    "tags": ["club", "cultural"],
+    "eventosSugeridos": [],
+    "notas": ""
+  },
+  {
+    "id": "er-concordia-muni",
+    "provincia": "Entre Ríos",
+    "ciudad": "Concordia",
+    "categoria": "Municipalidades",
+    "subcategoria": "Cultura",
+    "nombre": "Municipalidad de Concordia",
+    "direccion": "Mitre 76",
+    "telefono": "",
+    "email": "",
+    "sitioWeb": "",
+    "descripcion": "Dirección de Cultura, Turismo, Ceremonial",
+    "tags": ["Dirección de Cultura", "Turismo", "Ceremonial"],
+    "eventosSugeridos": [],
+    "notas": ""
+  },
+  {
+    "id": "er-concordia-catedral",
+    "provincia": "Entre Ríos",
+    "ciudad": "Concordia",
+    "categoria": "Catedrales",
+    "subcategoria": "Iglesia Católica",
+    "nombre": "Catedral San Antonio de Padua",
+    "direccion": "Urquiza y 1° de Mayo",
+    "telefono": "",
+    "email": "",
+    "sitioWeb": "",
+    "descripcion": "",
+    "tags": ["sacro", "catedral"],
+    "eventosSugeridos": ["Fiestas Patronales"],
+    "notas": ""
+  },
+  {
+    "id": "er-concordia-capilla",
+    "provincia": "Entre Ríos",
+    "ciudad": "Concordia",
+    "categoria": "Iglesias",
+    "subcategoria": "Iglesia Católica",
+    "nombre": "Capilla de los Capuchinos",
+    "direccion": "1° de Mayo 330",
+    "telefono": "",
+    "email": "",
+    "sitioWeb": "",
+    "descripcion": "",
+    "tags": ["sacro", "capilla"],
+    "eventosSugeridos": [],
+    "notas": ""
+  },
+  {
+    "id": "er-concordia-teatro",
+    "provincia": "Entre Ríos",
+    "ciudad": "Concordia",
+    "categoria": "Teatros",
+    "subcategoria": "Teatro",
+    "nombre": "Teatro Gran Odeón",
+    "direccion": "Entre Ríos 560",
+    "telefono": "0345-422-6655",
+    "email": "",
+    "sitioWeb": "",
+    "descripcion": "",
+    "tags": ["teatro", "sala"],
+    "eventosSugeridos": ["Recitales líricos", "Presentaciones en sala"],
+    "notas": ""
+  },
+  {
+    "id": "er-cdue-benevolenza",
+    "provincia": "Entre Ríos",
+    "ciudad": "Concepción del Uruguay",
+    "categoria": "Colectividades Italianas",
+    "subcategoria": "Sociedad Italiana",
+    "nombre": "Sociedad Italiana La Benevolenza",
+    "direccion": "3 de Febrero 100",
+    "telefono": "",
+    "email": "",
+    "sitioWeb": "",
+    "descripcion": "",
+    "tags": ["italia", "sociedad"],
+    "eventosSugeridos": ["Actos de inmigración italiana"],
+    "notas": "Una de las históricas más importantes de Entre Ríos."
+  },
+  {
+    "id": "er-cdue-dante",
+    "provincia": "Entre Ríos",
+    "ciudad": "Concepción del Uruguay",
+    "categoria": "Colectividades Italianas",
+    "subcategoria": "Dante Alighieri",
+    "nombre": "Dante Alighieri Concepción del Uruguay",
+    "direccion": "A. de San Martín 420",
+    "telefono": "03442-678831",
+    "email": "",
+    "sitioWeb": "",
+    "descripcion": "",
+    "tags": ["italia", "idioma"],
+    "eventosSugeridos": ["Conciertos culturales"],
+    "notas": "Comité oficial Dante Alighieri activo en la ciudad."
+  },
+  {
+    "id": "er-cdue-club",
+    "provincia": "Entre Ríos",
+    "ciudad": "Concepción del Uruguay",
+    "categoria": "Colectividades Italianas",
+    "subcategoria": "Club Cultural",
+    "nombre": "Club República de Italia",
+    "direccion": "Galarza y Larroque",
+    "telefono": "03442-679596",
+    "email": "",
+    "sitioWeb": "",
+    "descripcion": "",
+    "tags": ["club", "cultural"],
+    "eventosSugeridos": ["Eventos en el salón"],
+    "notas": ""
+  },
+  {
+    "id": "er-cdue-muni",
+    "provincia": "Entre Ríos",
+    "ciudad": "Concepción del Uruguay",
+    "categoria": "Municipalidades",
+    "subcategoria": "Cultura",
+    "nombre": "Municipalidad de Concepción del Uruguay",
+    "direccion": "San Martín 600",
+    "telefono": "",
+    "email": "",
+    "sitioWeb": "",
+    "descripcion": "Dirección de Cultura, Turismo, Ceremonial",
+    "tags": ["Dirección de Cultura", "Turismo", "Ceremonial"],
+    "eventosSugeridos": [],
+    "notas": ""
+  },
+  {
+    "id": "er-cdue-basilica",
+    "provincia": "Entre Ríos",
+    "ciudad": "Concepción del Uruguay",
+    "categoria": "Basílicas",
+    "subcategoria": "Iglesia Católica",
+    "nombre": "Basílica Inmaculada Concepción",
+    "direccion": "3 de Febrero y San Martín",
+    "telefono": "",
+    "email": "",
+    "sitioWeb": "",
+    "descripcion": "",
+    "tags": ["sacro", "basilica"],
+    "eventosSugeridos": ["Fiestas Patronales", "Eventos corales"],
+    "notas": ""
+  },
+  {
+    "id": "er-cdue-auditorio",
+    "provincia": "Entre Ríos",
+    "ciudad": "Concepción del Uruguay",
+    "categoria": "Centros Culturales",
+    "subcategoria": "Auditorio",
+    "nombre": "Auditorio Carlos María Scelzi",
+    "direccion": "8 de Junio 773",
+    "telefono": "",
+    "email": "",
+    "sitioWeb": "",
+    "descripcion": "",
+    "tags": ["auditorio", "municipal"],
+    "eventosSugeridos": ["Recitales", "Conciertos de cámara"],
+    "notas": ""
+  },
+  {
+    "id": "er-colon-dante",
+    "provincia": "Entre Ríos",
+    "ciudad": "Colón",
+    "categoria": "Colectividades Italianas",
+    "subcategoria": "Dante Alighieri",
+    "nombre": "Dante Alighieri Colón",
+    "direccion": "12 de Abril 400",
+    "telefono": "",
+    "email": "",
+    "sitioWeb": "",
+    "descripcion": "",
+    "tags": ["italia", "idioma"],
+    "eventosSugeridos": ["Conciertos para turistas"],
+    "notas": "Ciudad turística. Potencial adicional por afluencia de visitantes."
+  },
+  {
+    "id": "er-victoria-socital",
+    "provincia": "Entre Ríos",
+    "ciudad": "Victoria",
+    "categoria": "Colectividades Italianas",
+    "subcategoria": "Sociedad Italiana",
+    "nombre": "Sociedad Italiana Victoria",
+    "direccion": "Italia 54",
+    "telefono": "",
+    "email": "",
+    "sitioWeb": "",
+    "descripcion": "",
+    "tags": ["italia", "sociedad"],
+    "eventosSugeridos": [],
+    "notas": "Activa en reuniones provinciales de asociaciones italianas."
+  },
+  {
+    "id": "er-crespo-socital",
+    "provincia": "Entre Ríos",
+    "ciudad": "Crespo",
+    "categoria": "Colectividades Italianas",
+    "subcategoria": "Sociedad Italiana",
+    "nombre": "Sociedad Italiana Crespo",
+    "direccion": "San Martín 1250",
+    "telefono": "",
+    "email": "",
+    "sitioWeb": "",
+    "descripcion": "",
+    "tags": ["italia", "sociedad"],
+    "eventosSugeridos": ["Actos en el marco de la Avicultura"],
+    "notas": "Fiesta Nacional de la Avicultura (Mayo). Fuerte asociativismo local."
+  },
+  {
+    "id": "er-diamante-dante",
+    "provincia": "Entre Ríos",
+    "ciudad": "Diamante",
+    "categoria": "Colectividades Italianas",
+    "subcategoria": "Dante Alighieri",
+    "nombre": "Dante Alighieri Diamante",
+    "direccion": "25 de Mayo 334",
+    "telefono": "",
+    "email": "",
+    "sitioWeb": "",
+    "descripcion": "",
+    "tags": ["italia", "idioma"],
+    "eventosSugeridos": ["Velada italiana"],
+    "notas": "Sede activa con movimiento cultural."
+  },
+  {
+    "id": "er-diamante-socital",
+    "provincia": "Entre Ríos",
+    "ciudad": "Diamante",
+    "categoria": "Colectividades Italianas",
+    "subcategoria": "Sociedad Italiana",
+    "nombre": "Sociedad Italiana Diamante",
+    "direccion": "",
+    "telefono": "",
+    "email": "",
+    "sitioWeb": "",
+    "descripcion": "",
+    "tags": ["italia", "sociedad"],
+    "eventosSugeridos": [],
+    "notes": ""
+  },
+  {
+    "id": "er-chajari-dante",
+    "provincia": "Entre Ríos",
+    "ciudad": "Chajarí",
+    "categoria": "Colectividades Italianas",
+    "subcategoria": "Dante Alighieri",
+    "nombre": "Dante Alighieri Chajarí",
+    "direccion": "Urquiza y Salta",
+    "telefono": "",
+    "email": "",
+    "sitioWeb": "",
+    "descripcion": "",
+    "tags": ["italia", "idioma"],
+    "eventosSugeridos": ["Velada italiana", "Conciertos culturales"],
+    "notas": "Sede activa. Mucha descendencia italiana. Menos competencia artística que ciudades mayores."
+  },
+  {
+    "id": "er-nogoya-dante",
+    "provincia": "Entre Ríos",
+    "ciudad": "Nogoyá",
+    "categoria": "Colectividades Italianas",
+    "subcategoria": "Dante Alighieri",
+    "nombre": "Dante Alighieri Nogoyá",
+    "direccion": "",
+    "telefono": "",
+    "email": "",
+    "sitioWeb": "",
+    "descripcion": "",
+    "tags": ["italia", "idioma"],
+    "eventosSugeridos": [],
+    "notas": ""
+  },
+  {
+    "id": "er-nogoya-socital",
+    "provincia": "Entre Ríos",
+    "ciudad": "Nogoyá",
+    "categoria": "Colectividades Italianas",
+    "subcategoria": "Sociedad Italiana",
+    "nombre": "Sociedad Italiana Nogoyá",
+    "direccion": "",
+    "telefono": "",
+    "email": "",
+    "sitioWeb": "",
+    "descripcion": "",
+    "tags": ["italia", "sociedad"],
+    "eventosSugeridos": [],
+    "notas": ""
+  },
+  {
+    "id": "er-sjose-muni",
+    "provincia": "Entre Ríos",
+    "ciudad": "San José",
+    "categoria": "Municipalidades",
+    "subcategoria": "Cultura",
+    "nombre": "Municipalidad de San José — Cultura",
+    "direccion": "Centenario 2100",
+    "telefono": "",
+    "email": "",
+    "sitioWeb": "",
+    "descripcion": "",
+    "tags": ["Cultura", "Comunidad"],
+    "eventosSugeridos": ["Fiestas comunitarias coloniales"],
+    "notas": "Colonia histórica de inmigrantes europeos. Cerca de Colón. Fuerte tradición comunitaria."
+  },
+  {
+    "id": "er-macia-muni",
+    "provincia": "Entre Ríos",
+    "ciudad": "Maciá",
+    "categoria": "Municipalidades",
+    "subcategoria": "Cultura",
+    "nombre": "Municipalidad de Maciá — Cultura",
+    "direccion": "Gualeguaychú 120",
+    "telefono": "",
+    "email": "",
+    "sitioWeb": "",
+    "descripcion": "",
+    "tags": ["Cultura", "Apicultura"],
+    "eventosSugeridos": ["Fiesta Nacional de la Apicultura"],
+    "notas": "Fiesta Nacional de la Apicultura (Abril). Actos inaugurales y galas protocolares."
+  },
+  {
+    "id": "er-urdinarrain-muni",
+    "provincia": "Entre Ríos",
+    "ciudad": "Urdinarrain",
+    "categoria": "Municipalidades",
+    "subcategoria": "Cultura",
+    "nombre": "Municipalidad de Urdinarrain — Cultura",
+    "direccion": "Patria 50",
+    "telefono": "",
+    "email": "",
+    "sitioWeb": "",
+    "descripcion": "",
+    "tags": ["Cultura", "Caballo"],
+    "eventosSugeridos": ["Fiesta Provincial del Caballo"],
+    "notas": "Fiesta Provincial del Caballo. Segmento institucional: apertura oficial, himnos, autoridades."
+  },
+  {
+    "id": "er-basavilbaso-dante",
+    "provincia": "Entre Ríos",
+    "ciudad": "Basavilbaso",
+    "categoria": "Colectividades Italianas",
+    "subcategoria": "Dante Alighieri",
+    "nombre": "Dante Alighieri Basavilbaso",
+    "direccion": "",
+    "telefono": "",
+    "email": "",
+    "sitioWeb": "",
+    "descripcion": "",
+    "tags": ["italia", "idioma"],
+    "eventosSugeridos": [],
+    "notas": ""
+  },
+  {
+    "id": "er-velisa-piemontesa",
+    "provincia": "Entre Ríos",
+    "ciudad": "Villa Elisa",
+    "categoria": "Colectividades Italianas",
+    "subcategoria": "Colectividad Regional Italiana",
+    "nombre": "Familia Piemontesa de Villa Elisa",
+    "direccion": "",
+    "telefono": "",
+    "email": "",
+    "sitioWeb": "",
+    "descripcion": "",
+    "tags": ["piemonte", "regional"],
+    "eventosSugeridos": [],
+    "notas": ""
+  },
+  {
+    "id": "er-larroque-veneto",
+    "provincia": "Entre Ríos",
+    "ciudad": "Larroque",
+    "categoria": "Colectividades Italianas",
+    "subcategoria": "Colectividad Regional Italiana",
+    "nombre": "Centro Véneto de Larroque",
+    "direccion": "",
+    "telefono": "",
+    "email": "",
+    "sitioWeb": "",
+    "descripcion": "",
+    "tags": ["veneto", "regional"],
+    "eventosSugeridos": [],
+    "notas": ""
+  },
+  {
+    "id": "sfe-dante-sf",
+    "provincia": "Santa Fe",
+    "ciudad": "Santa Fe",
+    "categoria": "Colectividades Italianas",
+    "subcategoria": "Dante Alighieri",
+    "nombre": "Dante Alighieri Unione e Benevolenza",
+    "direccion": "25 de Mayo 2569",
+    "telefono": "+54 342 4556417",
+    "email": "coordinaciondantesfe@gmail.com",
+    "sitioWeb": "https://www.uybdantealighierisf.org.ar",
+    "descripcion": "Dante Alighieri School Unione e Benevolenza (Language school)",
+    "tags": ["italia", "idioma", "cultura", "plida"],
+    "eventosSugeridos": ["Dia de la Republica Italiana", "Semana de la Italianidad", "Conciertos italianos"],
+    "notas": "Datos oficiales obtenidos de la red Dante Alighieri y de la institución local."
+  },
+  {
+    "id": "sfe-dante-ros",
+    "provincia": "Santa Fe",
+    "ciudad": "Rosario",
+    "categoria": "Colectividades Italianas",
+    "subcategoria": "Dante Alighieri",
+    "nombre": "Asociacion Cultural Dante Alighieri Rosario",
+    "direccion": "Boulevard Oroño 1160",
+    "telefono": "+54 341 4408301",
+    "email": "contacto@danterosario.com.ar",
+    "sitioWeb": "https://www.danterosario.com.ar",
+    "descripcion": "Dante Alighieri Educational Center Rosario",
+    "tags": ["italia", "cultura", "idioma", "eventos"],
+    "eventosSugeridos": [],
+    "notas": ""
+  },
+  {
+    "id": "sfe-socital-trebol",
+    "provincia": "Santa Fe",
+    "ciudad": "El Trebol",
+    "categoria": "Colectividades Italianas",
+    "subcategoria": "Sociedad Italiana",
+    "nombre": "Sociedad Italiana Estrella de Italia",
+    "direccion": "Juan Francisco Segui 960",
+    "telefono": "+54 3401 420561",
+    "email": "info@sociedaditalianaet.com.ar",
+    "sitioWeb": "https://sociedaditalianaet.com.ar",
+    "descripcion": "Sociedad Italiana (Cultural association)",
+    "tags": ["italia", "musica", "cultura", "biblioteca"],
+    "eventosSugeridos": [],
+    "notas": ""
+  },
+  {
+    "id": "sfe-cc-esperanza",
+    "provincia": "Santa Fe",
+    "ciudad": "Esperanza",
+    "categoria": "Centros Culturales",
+    "subcategoria": "Centro Cultural",
+    "nombre": "Centro Cultural Municipal Dante Alighieri",
+    "direccion": "Sarmiento 2551",
+    "telefono": "",
+    "email": "",
+    "sitioWeb": "",
+    "descripcion": "Municipal Cultural Center Dante Alighieri",
+    "tags": ["teatro", "conciertos", "eventos"],
+    "eventosSugeridos": [],
+    "notas": ""
+  },
+  {
+    "id": "sfe-socital-sunchales",
+    "provincia": "Santa Fe",
+    "ciudad": "Sunchales",
+    "categoria": "Colectividades Italianas",
+    "subcategoria": "Sociedad Italiana",
+    "nombre": "Sociedad Italiana de Sunchales",
+    "direccion": "Italia 226",
+    "telefono": "+54 3493 400258",
+    "email": "",
+    "sitioWeb": "",
+    "descripcion": "Sociedad Italiana De Sunchales (Dance hall)",
+    "tags": ["italia", "salon", "eventos"],
+    "eventosSugeridos": [],
+    "notas": ""
+  },
+  {
+    "id": "sfe-dante-vc",
+    "provincia": "Santa Fe",
+    "ciudad": "Villa Constitucion",
+    "categoria": "Colectividades Italianas",
+    "subcategoria": "Dante Alighieri",
+    "nombre": "Dante Alighieri Villa Constitucion",
+    "direccion": "Irigoyen 1412",
+    "telefono": "+54 3400 476713",
+    "email": "",
+    "sitioWeb": "",
+    "descripcion": "Dante Alighieri (Educational institution)",
+    "tags": ["italia", "educacion", "idioma"],
+    "eventosSugeridos": [],
+    "notas": ""
+  },
+  {
+    "id": "cba-circulo-cba",
+    "provincia": "Cordoba",
+    "ciudad": "Cordoba Capital",
+    "categoria": "Colectividades Italianas",
+    "subcategoria": "Circulo Italiano",
+    "nombre": "Circulo Italiano de Cordoba",
+    "direccion": "General Manuel Belgrano 137",
+    "telefono": "+54 351 4244201",
+    "email": "",
+    "sitioWeb": "",
+    "descripcion": "Circulo Italiano de Córdoba (Chauffeur service)",
+    "tags": ["italia", "eventos", "cultura", "colectividad"],
+    "eventosSugeridos": ["Conciertos italianos", "Canzonetas", "Galas liricas"],
+    "notas": ""
+  },
+  {
+    "id": "cba-dante-rc",
+    "provincia": "Cordoba",
+    "ciudad": "Rio Cuarto",
+    "categoria": "Colectividades Italianas",
+    "subcategoria": "Dante Alighieri",
+    "nombre": "Instituto de Cultura Italiana Dante Alighieri",
+    "direccion": "Colon 243",
+    "telefono": "+54 358 4627315",
+    "email": "",
+    "sitioWeb": "http://www.danteriocuarto.edu.ar",
+    "descripcion": "",
+    "tags": ["italia", "idioma", "cultura"],
+    "eventosSugeridos": [],
+    "notas": ""
+  }
+]

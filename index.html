@@ -16,7 +16,7 @@
     <div class="nav-inner">
       <div class="nav-brand">
         <span class="nav-flag">🎭</span>
-        <span class="nav-title">Roadmap Lírico <em>Entre Ríos</em></span>
+        <span class="nav-title">Roadmap Lírico <em>Interprovincial</em></span>
       </div>
       <ul class="nav-links">
         <li><a href="#ciudades">Ciudades</a></li>
@@ -27,13 +27,13 @@
       </ul>
     </div>
   </nav>
-
+ 
   <!-- HERO -->
   <header class="hero">
     <div class="hero-content">
-      <div class="hero-badge">Provincia de Entre Ríos · 2026</div>
+      <div class="hero-badge">Provincias Unidas · Entre Ríos · Santa Fe · Córdoba</div>
       <h1 class="hero-title">Roadmap Artístico<br /><span>Cantante Lírico</span></h1>
-      <p class="hero-subtitle">Planificación estratégica de presencia lírica en colectividades italianas, municipios, iglesias y mercado privado de la provincia.</p>
+      <p class="hero-subtitle">Planificación estratégica de presencia lírica en colectividades italianas, municipios, teatros, iglesias y mercado privado.</p>
       <div class="hero-stats" id="hero-stats">
         <!-- populated by JS -->
       </div>
@@ -44,9 +44,22 @@
       <div class="notes-float" style="animation-delay:2.4s; font-size:1.4rem;">𝄞</div>
     </div>
   </header>
-
+ 
   <main>
 
+    <!-- PROVINCE FILTER BAR -->
+    <div class="filter-bar-sticky" id="filter-bar-sticky">
+      <div class="filter-bar-inner">
+        <span class="filter-label">Provincia Activa:</span>
+        <div class="province-pills" id="province-pills">
+          <button class="province-pill active" data-provincia="all">Todas</button>
+          <button class="province-pill" data-provincia="Entre Ríos">Entre Ríos</button>
+          <button class="province-pill" data-provincia="Santa Fe">Santa Fe</button>
+          <button class="province-pill" data-provincia="Córdoba">Córdoba</button>
+        </div>
+      </div>
+    </div>
+ 
     <!-- CIUDADES -->
     <section id="ciudades" class="section">
       <div class="section-header">

@@ -856,4 +856,71 @@ img { max-width: 100%; display: block; }
   .dir-cat { padding: 14px 16px; }
 }
 
+/* ── BARRA DE FILTROS STICKY DE PROVINCIA ── */
+.filter-bar-sticky {
+  position: sticky;
+  top: 60px;
+  z-index: 90;
+  background: rgba(22, 27, 39, 0.85);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--clr-border);
+  padding: 12px 24px;
+  transition: all var(--transition);
+}
+.filter-bar-inner {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.filter-label {
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--clr-accent);
+}
+.province-pills {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.province-pill {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--clr-border);
+  color: var(--clr-muted);
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all var(--transition);
+  font-family: inherit;
+  outline: none;
+}
+.province-pill:hover {
+  border-color: rgba(201,168,76,0.4);
+  color: var(--clr-text);
+  background: rgba(255,255,255,0.06);
+}
+.province-pill.active {
+  background: rgba(201,168,76,0.15);
+  border-color: var(--clr-accent);
+  color: var(--clr-accent2);
+  box-shadow: 0 0 10px rgba(201,168,76,0.1);
+}
+
+@media (max-width: 768px) {
+  .filter-bar-sticky {
+    padding: 10px 16px;
+  }
+  .filter-bar-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}
+
+
 

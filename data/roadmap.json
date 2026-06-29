@@ -2,7 +2,7 @@
   "artista": {
     "nombre": "Cantante Lírico",
     "tipo": "Tenor / Barítono",
-    "provincia": "Entre Ríos",
+    "provincia": "Interprovincial",
     "repertorios": [
       "Ópera",
       "Opereta",
@@ -29,7 +29,15 @@
     "Victoria": 7,
     "San José": 7,
     "Maciá": 6,
-    "Urdinarrain": 6
+    "Urdinarrain": 6,
+    "Santa Fe": 10,
+    "Rosario": 10,
+    "El Trébol": 7,
+    "Esperanza": 8,
+    "Sunchales": 7,
+    "Villa Constitución": 7,
+    "Córdoba Capital": 10,
+    "Río Cuarto": 8
   },
   "eventosRecurrentes": {
     "subcategorias": [
@@ -73,6 +81,7 @@
   "localidades": [
     {
       "nombre": "Paraná",
+      "provincia": "Entre Ríos",
       "prioridad": 1,
       "nivelA": true,
       "descripcion": "Capital provincial. Mayor concentración de instituciones italianas activas de la provincia.",
@@ -134,6 +143,7 @@
     },
     {
       "nombre": "Gualeguay",
+      "provincia": "Entre Ríos",
       "prioridad": 1,
       "nivelA": true,
       "destacado": "🏛️ Teatro Italia — Patrimonio Histórico Nacional",
@@ -155,6 +165,7 @@
     },
     {
       "nombre": "Concordia",
+      "provincia": "Entre Ríos",
       "prioridad": 1,
       "nivelA": false,
       "descripcion": "Ciudad con múltiples entidades italianas funcionando simultáneamente.",
@@ -195,6 +206,7 @@
     },
     {
       "nombre": "Concepción del Uruguay",
+      "provincia": "Entre Ríos",
       "prioridad": 1,
       "nivelA": false,
       "descripcion": "Ciudad histórica con instituciones italianas de larga trayectoria.",
@@ -205,7 +217,7 @@
           "estado": "Pendiente",
           "descripcion": "Una de las sociedades italianas históricas más importantes de Entre Ríos.",
           "rating": "3.9",
-          "oportunidades": ["Actos de inmigración italiana", "Eventos culturales"]
+          "oportunidades": ["Actos por inmigración italiana", "Eventos culturales"]
         },
         {
           "nombre": "Sociedad Dante Alighieri / Escuela de Italiano",
@@ -232,9 +244,10 @@
     },
     {
       "nombre": "Diamante",
+      "provincia": "Entre Ríos",
       "prioridad": 1,
       "nivelA": true,
-      "descripcion": "Cerca de Paraná. Sede activa de Dante Alighieri. Menos competencia, alta descendencia italiana y movimiento cultural. Encaja muy bien para una velada italiana o lírica.",
+      "descripcion": "Cerca de Paraná. Sede activa de Dante Alighieri. Menos competencia, alta descendencia italiana y movimiento cultural.",
       "instituciones": [
         {
           "nombre": "Sociedad Dante Alighieri Diamante",
@@ -252,9 +265,10 @@
     },
     {
       "nombre": "Crespo",
+      "provincia": "Entre Ríos",
       "prioridad": 1,
       "nivelA": true,
-      "descripcion": "Subida de prioridad. Además de la actividad italiana cuenta con la Fiesta Nacional de la Avicultura, mucho asociativismo, público familiar y cercanía a Paraná.",
+      "descripcion": "Además de la actividad italiana cuenta con la Fiesta Nacional de la Avicultura, mucho asociativismo, público familiar y cercanía a Paraná.",
       "instituciones": [
         {
           "nombre": "Sociedad Italiana de Crespo",
@@ -272,6 +286,7 @@
     },
     {
       "nombre": "Colón",
+      "provincia": "Entre Ríos",
       "prioridad": 2,
       "nivelA": false,
       "descripcion": "Ciudad turística con comité oficial de la red internacional Dante Alighieri.",
@@ -291,9 +306,10 @@
     },
     {
       "nombre": "San José",
+      "provincia": "Entre Ríos",
       "prioridad": 2,
       "nivelA": true,
-      "descripcion": "Muy cerca de Colón. Fuerte herencia de inmigración europea. Organiza eventos culturales propios. La colonia histórica hace que sea una ciudad para investigar más.",
+      "descripcion": "Muy cerca de Colón. Fuerte herencia de inmigración europea. Organiza eventos culturales propios.",
       "instituciones": [
         {
           "nombre": "Municipalidad de San José – Cultura",
@@ -311,6 +327,7 @@
     },
     {
       "nombre": "Victoria",
+      "provincia": "Entre Ríos",
       "prioridad": 2,
       "nivelA": false,
       "descripcion": "Representantes presentes en reuniones provinciales de asociaciones italianas.",
@@ -328,9 +345,10 @@
     },
     {
       "nombre": "Chajarí",
+      "provincia": "Entre Ríos",
       "prioridad": 2,
       "nivelA": true,
-      "descripcion": "Sorprende con una sede activa de Dante Alighieri. Suele quedar fuera del radar cultural provincial pero tiene mucha descendencia italiana, turismo regional y eventos municipales frecuentes.",
+      "descripcion": "Sede activa de Dante Alighieri. Mucha descendencia italiana, turismo regional y eventos municipales frecuentes.",
       "instituciones": [
         {
           "nombre": "Dante Alighieri Chajarí",
@@ -348,6 +366,7 @@
     },
     {
       "nombre": "Maciá",
+      "provincia": "Entre Ríos",
       "prioridad": 3,
       "nivelA": false,
       "descripcion": "Sede de la Fiesta Nacional de la Apicultura. Potencial en inauguraciones, actos y galas protocolares.",
@@ -367,9 +386,10 @@
     },
     {
       "nombre": "Urdinarrain",
+      "provincia": "Entre Ríos",
       "prioridad": 3,
       "nivelA": false,
-      "descripcion": "Sede de la Fiesta Provincial del Caballo. Oportunidad en el segmento institucional: apertura oficial, actos protocolares, himnos y autoridades presentes.",
+      "descripcion": "Sede de la Fiesta Provincial del Caballo. Oportunidad en el segmento institucional: apertura oficial, actos protocolares.",
       "instituciones": [
         {
           "nombre": "Municipalidad de Urdinarrain – Cultura",
@@ -382,6 +402,161 @@
       "eventosClave": [
         { "nombre": "Fiesta Provincial del Caballo", "mes": "Variable", "tipo": "Fiesta Provincial" },
         { "nombre": "Actos protocolares", "mes": "Variable", "tipo": "Municipal" }
+      ]
+    },
+    {
+      "nombre": "Santa Fe",
+      "provincia": "Santa Fe",
+      "prioridad": 1,
+      "nivelA": true,
+      "descripcion": "Capital provincial de Santa Fe. Fuerte arraigo cultural y presencia de la histórica red Dante Alighieri.",
+      "instituciones": [
+        {
+          "nombre": "Dante Alighieri Unione e Benevolenza",
+          "tipo": "Dante Alighieri",
+          "estado": "Pendiente",
+          "descripcion": "Datos oficiales obtenidos de la red Dante Alighieri y de la institución local.",
+          "oportunidades": ["Dia de la Republica Italiana", "Semana de la Italianidad", "Conciertos italianos"]
+        }
+      ],
+      "eventosClave": [
+        { "nombre": "Día de la República Italiana", "mes": "Junio", "tipo": "Institucional" },
+        { "nombre": "Semana de la Italianidad", "mes": "Junio", "tipo": "Cultural" },
+        { "nombre": "Conciertos Italianos", "mes": "Variable", "tipo": "Artístico" }
+      ]
+    },
+    {
+      "nombre": "Rosario",
+      "provincia": "Santa Fe",
+      "prioridad": 1,
+      "nivelA": true,
+      "descripcion": "Gran polo cultural y educativo. Alta demanda de eventos italianos, cursos y presentaciones líricas.",
+      "instituciones": [
+        {
+          "nombre": "Asociacion Cultural Dante Alighieri Rosario",
+          "tipo": "Dante Alighieri",
+          "estado": "Pendiente",
+          "oportunidades": ["Eventos culturales", "Idioma", "Difusión cultural"]
+        }
+      ],
+      "eventosClave": [
+        { "nombre": "Encuentros Culturales", "mes": "Todo el año", "tipo": "Cultural" },
+        { "nombre": "Temporada de Ópera y Lírica", "mes": "Variable", "tipo": "Artístico" }
+      ]
+    },
+    {
+      "nombre": "El Trébol",
+      "provincia": "Santa Fe",
+      "prioridad": 2,
+      "nivelA": false,
+      "descripcion": "Asociación cultural activa con biblioteca y fuerte vínculo con la música italiana.",
+      "instituciones": [
+        {
+          "nombre": "Sociedad Italiana Estrella de Italia",
+          "tipo": "Sociedad Italiana",
+          "estado": "Pendiente",
+          "oportunidades": ["Música", "Cultura", "Eventos"]
+        }
+      ],
+      "eventosClave": [
+        { "nombre": "Eventos de Biblioteca", "mes": "Variable", "tipo": "Cultural" },
+        { "nombre": "Conciertos de Música Italiana", "mes": "Variable", "tipo": "Artístico" }
+      ]
+    },
+    {
+      "nombre": "Esperanza",
+      "provincia": "Santa Fe",
+      "prioridad": 2,
+      "nivelA": false,
+      "descripcion": "Centro Cultural Municipal destacado, escenario ideal para conciertos y obras de teatro.",
+      "instituciones": [
+        {
+          "nombre": "Centro Cultural Municipal Dante Alighieri",
+          "tipo": "Centro Cultural",
+          "estado": "Pendiente",
+          "oportunidades": ["Teatro", "Conciertos", "Eventos"]
+        }
+      ],
+      "eventosClave": [
+        { "nombre": "Temporada de Conciertos", "mes": "Todo el año", "tipo": "Artístico" },
+        { "nombre": "Obras teatrales", "mes": "Variable", "tipo": "Cultural" }
+      ]
+    },
+    {
+      "nombre": "Sunchales",
+      "provincia": "Santa Fe",
+      "prioridad": 2,
+      "nivelA": false,
+      "descripcion": "Salón de eventos de la Sociedad Italiana con actividad social y cultural relevante.",
+      "instituciones": [
+        {
+          "nombre": "Sociedad Italiana de Sunchales",
+          "tipo": "Sociedad Italiana",
+          "estado": "Pendiente",
+          "oportunidades": ["Eventos", "Cenas", "Salón"]
+        }
+      ],
+      "eventosClave": [
+        { "nombre": "Cenas aniversario", "mes": "Variable", "tipo": "Institucional" },
+        { "nombre": "Galas sociales", "mes": "Variable", "tipo": "Cultural" }
+      ]
+    },
+    {
+      "nombre": "Villa Constitución",
+      "provincia": "Santa Fe",
+      "prioridad": 2,
+      "nivelA": false,
+      "descripcion": "Institución educativa de la Dante Alighieri activa en la formación y difusión italiana.",
+      "instituciones": [
+        {
+          "nombre": "Dante Alighieri Villa Constitucion",
+          "tipo": "Dante Alighieri",
+          "estado": "Pendiente",
+          "oportunidades": ["Idioma", "Educación", "Cultura"]
+        }
+      ],
+      "eventosClave": [
+        { "nombre": "Día de la República Italiana", "mes": "Junio", "tipo": "Institucional" },
+        { "nombre": "Muestras de Fin de Año", "mes": "Noviembre/Diciembre", "tipo": "Educativo" }
+      ]
+    },
+    {
+      "nombre": "Córdoba Capital",
+      "provincia": "Córdoba",
+      "prioridad": 1,
+      "nivelA": true,
+      "descripcion": "Gran capital provincial con alta demanda artística. El Círculo Italiano es un centro de referencia histórico.",
+      "instituciones": [
+        {
+          "nombre": "Circulo Italiano de Cordoba",
+          "tipo": "Círculo Italiano",
+          "estado": "Pendiente",
+          "oportunidades": ["Conciertos italianos", "Canzonetas", "Galas liricas"]
+        }
+      ],
+      "eventosClave": [
+        { "nombre": "Galas Líricas", "mes": "Todo el año", "tipo": "Artístico" },
+        { "nombre": "Velada de Canzonetas", "mes": "Variable", "tipo": "Artístico" },
+        { "nombre": "Aniversario Círculo", "mes": "Variable", "tipo": "Institucional" }
+      ]
+    },
+    {
+      "nombre": "Río Cuarto",
+      "provincia": "Córdoba",
+      "prioridad": 2,
+      "nivelA": false,
+      "descripcion": "Importante centro urbano del sur de Córdoba con instituto Dante Alighieri activo.",
+      "instituciones": [
+        {
+          "nombre": "Instituto de Cultura Italiana Dante Alighieri",
+          "tipo": "Dante Alighieri",
+          "estado": "Pendiente",
+          "oportunidades": ["Idioma", "Cultura", "Encuentros"]
+        }
+      ],
+      "eventosClave": [
+        { "nombre": "Encuentros de la Dante", "mes": "Variable", "tipo": "Cultural" },
+        { "nombre": "Conciertos de cámara", "mes": "Variable", "tipo": "Artístico" }
       ]
     }
   ],

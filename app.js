@@ -1,5 +1,5 @@
 /* ============================================================
-   app.js — Roadmap Artístico Lírico · Entre Ríos
+   app.js — Roadmap Artístico Lírico · Interprovincial
    Carga datos desde JSON y construye toda la interfaz
    ============================================================ */
 
@@ -56,19 +56,35 @@ function tipoIcon(tipo = '') {
   return map[tipo] || '📌';
 }
 
+// Configuración de categorías enriquecidas para el directorio
+const CAT_CONFIG = {
+  "Colectividades Italianas": { label: "Colectividades Italianas", icon: "🇮🇹", dotClass: "colectividad" },
+  "Municipalidades":          { label: "Municipalidades",          icon: "🏛️", dotClass: "default" },
+  "Secretarias de Cultura":   { label: "Secretarías de Cultura",   icon: "🎭", dotClass: "cultural" },
+  "Secretarias de Turismo":   { label: "Secretarías de Turismo",   icon: "🌿", dotClass: "default" },
+  "Teatros":                  { label: "Teatros",                  icon: "🎭", dotClass: "alta" },
+  "Centros Culturales":       { label: "Centros Culturales",       icon: "🎭", dotClass: "cultural" },
+  "Iglesias":                 { label: "Iglesias",                 icon: "⛪", dotClass: "default" },
+  "Catedrales":               { label: "Catedrales",               icon: "⛪", dotClass: "default" },
+  "Basílicas":                { label: "Basílicas",                icon: "⛪", dotClass: "default" },
+  "Salones Históricos":       { label: "Salones Históricos",       icon: "🏛️", dotClass: "club" },
+  "Festivales":               { label: "Festivales",               icon: "🎪", dotClass: "club" },
+  "Fiestas Nacionales":       { label: "Fiestas Nacionales",       icon: "🎪", dotClass: "alta" },
+  "Casas de la Cultura":      { label: "Casas de la Cultura",      icon: "🎭", dotClass: "cultural" }
+};
+
+// Variables globales de estado
+let allRoadmapData   = null;
+let allContactosData = [];
+let activeProvince   = 'all'; // 'all', 'Entre Ríos', 'Santa Fe', 'Córdoba'
+let activeCity       = null;  // null = todas
+
 // ── Hero stats ────────────────────────────────────────────────
 
-function buildHeroStats(roadmap, ciudadesData) {
-  const totalCiudades = ciudadesData.ciudades.length;
-  const p1            = ciudadesData.ciudades.filter(c => c.prioridad === 1).length;
-  const totalInst     = ciudadesData.ciudades.reduce((acc, c) => {
-    const cat = c.categorias || {};
-    return acc +
-      (cat.colectividades?.length || 0) +
-      (cat.municipios?.length || 0) +
-      (cat.iglesias?.length || 0) +
-      (cat.espaciosCulturales?.length || 0);
-  }, 0);
+function buildHeroStats(filteredLocalidades, filteredContactos, roadmap) {
+  const totalCiudades = filteredLocalidades.length;
+  const p1            = filteredLocalidades.filter(c => c.prioridad === 1).length;
+  const totalInst     = filteredContactos.length;
 
   document.getElementById('hero-stats').innerHTML = `
     <div class="hero-stat fade-in fade-in-delay-1">
@@ -91,14 +107,23 @@ function buildHeroStats(roadmap, ciudadesData) {
 
 // ── Ciudades (cards con instituciones del roadmap) ────────────
 
-function buildCiudades(roadmap) {
+function buildCiudades(roadmap, selectedProvince = 'all') {
   const container = document.getElementById('ciudades-grid');
   const potencial = roadmap.potencial || {};
 
-  const sorted = [...roadmap.localidades].sort((a, b) => {
+  const filtered = selectedProvince === 'all'
+    ? roadmap.localidades
+    : roadmap.localidades.filter(c => c.provincia === selectedProvince);
+
+  const sorted = [...filtered].sort((a, b) => {
     if (a.prioridad !== b.prioridad) return a.prioridad - b.prioridad;
     return (potencial[b.nombre] || 0) - (potencial[a.nombre] || 0);
   });
+
+  if (sorted.length === 0) {
+    container.innerHTML = `<div class="no-results" style="grid-column:1/-1;text-align:center;padding:40px;color:var(--clr-muted)">No hay ciudades prioritarias registradas para esta provincia.</div>`;
+    return;
+  }
 
   container.innerHTML = sorted.map(ciudad => {
     const pClass = getPriorityClass(ciudad.prioridad);
@@ -133,7 +158,7 @@ function buildCiudades(roadmap) {
       <div class="ciudad-card fade-in">
         <div class="ciudad-card-header">
           <div>
-            <h3>${escapeHtml(ciudad.nombre)}</h3>
+            <h3>${escapeHtml(ciudad.nombre)} <small style="font-size:0.75rem; color:var(--clr-muted); font-weight:normal">(${escapeHtml(ciudad.provincia)})</small></h3>
             ${nivelABadge}
           </div>
           <div style="display:flex;flex-direction:column;align-items:flex-end;gap:6px">
@@ -239,131 +264,189 @@ function buildRepertorio(data) {
 
 // ── Directorio de Contactos ───────────────────────────────────
 
-const CAT_CONFIG = {
-  colectividades:   { label: 'Colectividades',    icon: '🇮🇹', dotClass: 'colectividad' },
-  municipios:       { label: 'Municipios',         icon: '🏛️', dotClass: 'default' },
-  iglesias:         { label: 'Iglesias',           icon: '⛪',  dotClass: 'default' },
-  espaciosCulturales: { label: 'Espacios Culturales', icon: '🎭', dotClass: 'alta' }
-};
+function buildDirectorio(contactos) {
+  allContactosData = contactos;
+  renderDirectorioChips();
+  renderDirectorio();
+}
 
-let allCiudadesData   = [];
-let activeCity        = null;   // null = todas
-
-function buildDirectorio(ciudadesData) {
-  allCiudadesData = ciudadesData.ciudades;
-
-  // Chips de ciudades
+function renderDirectorioChips() {
   const chipsContainer = document.getElementById('cf-ciudades');
+  if (!chipsContainer) return;
+
+  // Filtrar contactos por provincia activa
+  const filtered = activeProvince === 'all'
+    ? allContactosData
+    : allContactosData.filter(c => c.provincia === activeProvince);
+
+  // Extraer ciudades únicas
+  const uniqueCities = [...new Set(filtered.map(c => c.ciudad))].sort();
+
+  // Reconstruir chips
   chipsContainer.innerHTML =
     `<button class="city-chip active" data-ciudad="">Todas</button>` +
-    allCiudadesData.map(c =>
-      `<button class="city-chip" data-ciudad="${escapeHtml(c.nombre)}">${escapeHtml(c.nombre)}</button>`
+    uniqueCities.map(city =>
+      `<button class="city-chip" data-ciudad="${escapeHtml(city)}">${escapeHtml(city)}</button>`
     ).join('');
 
-  chipsContainer.addEventListener('click', e => {
-    const btn = e.target.closest('.city-chip');
-    if (!btn) return;
-    chipsContainer.querySelectorAll('.city-chip').forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-    activeCity = btn.dataset.ciudad || null;
-    renderDirectorio();
-  });
+  activeCity = null;
 
-  renderDirectorio();
+  // Registrar listeners para los chips
+  chipsContainer.querySelectorAll('.city-chip').forEach(btn => {
+    btn.addEventListener('click', e => {
+      chipsContainer.querySelectorAll('.city-chip').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      activeCity = btn.dataset.ciudad || null;
+      renderDirectorio();
+    });
+  });
 }
 
 function renderDirectorio() {
   const container = document.getElementById('directorio-grid');
-  const ciudades = activeCity
-    ? allCiudadesData.filter(c => c.nombre === activeCity)
-    : allCiudadesData;
+  
+  let filtered = allContactosData;
+  if (activeProvince !== 'all') {
+    filtered = filtered.filter(c => c.provincia === activeProvince);
+  }
+  if (activeCity) {
+    filtered = filtered.filter(c => c.ciudad === activeCity);
+  }
 
-  container.innerHTML = ciudades.map(ciudad => {
-    const cat  = ciudad.categorias || {};
-    const cats = Object.entries(CAT_CONFIG)
-      .filter(([key]) => cat[key]?.length)
-      .map(([key, cfg]) => {
-        const items = cat[key];
-        const itemsHtml = items.map(item => buildContactItem(item, key)).join('');
-        return `
-          <div class="dir-cat">
-            <div class="dir-cat-header">
-              <span class="dir-cat-icon">${cfg.icon}</span>
-              <span class="dir-cat-label">${cfg.label}</span>
-              <span class="dir-cat-count">${items.length}</span>
-            </div>
-            <div class="dir-cat-items">${itemsHtml}</div>
-          </div>`;
-      }).join('');
+  // Agrupar por Ciudad
+  const citiesMap = {};
+  filtered.forEach(item => {
+    if (!citiesMap[item.ciudad]) {
+      citiesMap[item.ciudad] = {
+        nombre: item.ciudad,
+        provincia: item.provincia,
+        contactos: []
+      };
+    }
+    citiesMap[item.ciudad].contactos.push(item);
+  });
 
-    const pClass = getPriorityClass(ciudad.prioridad);
+  const sortedCities = Object.values(citiesMap).sort((a, b) => a.nombre.localeCompare(b.nombre));
+
+  if (sortedCities.length === 0) {
+    container.innerHTML = `<div class="no-results" style="grid-column: 1/-1; text-align: center; padding: 40px; color: var(--clr-muted);">No hay contactos registrados con los filtros seleccionados.</div>`;
+    return;
+  }
+
+  container.innerHTML = sortedCities.map(ciudad => {
+    // Agrupar los contactos de esta ciudad por Categoría
+    const catMap = {};
+    ciudad.contactos.forEach(c => {
+      const catName = c.categoria || "Otros";
+      if (!catMap[catName]) {
+        catMap[catName] = [];
+      }
+      catMap[catName].push(c);
+    });
+
+    const catsHtml = Object.entries(catMap).map(([catKey, items]) => {
+      const cfg = CAT_CONFIG[catKey] || { label: catKey, icon: '📌', dotClass: 'default' };
+      const itemsHtml = items.map(item => buildContactItem(item)).join('');
+      return `
+        <div class="dir-cat">
+          <div class="dir-cat-header">
+            <span class="dir-cat-icon">${cfg.icon}</span>
+            <span class="dir-cat-label">${cfg.label}</span>
+            <span class="dir-cat-count">${items.length}</span>
+          </div>
+          <div class="dir-cat-items">${itemsHtml}</div>
+        </div>`;
+    }).join('');
+
+    const roadmapCity = (allRoadmapData?.localidades || []).find(lc => lc.nombre === ciudad.nombre && lc.provincia === ciudad.provincia);
+    const pClass = roadmapCity ? getPriorityClass(roadmapCity.prioridad) : 'p3';
+    const pLabel = roadmapCity ? getPriorityLabel(roadmapCity.prioridad) : 'Prioridad 3';
+    const destacadoHtml = roadmapCity?.destacado ? `<span class="dir-destacado">${roadmapCity.destacado}</span>` : '';
+
     return `
       <div class="dir-ciudad" id="dir-${ciudad.nombre.replace(/\s+/g, '-').toLowerCase()}">
         <div class="dir-ciudad-header">
-          <h3 class="dir-ciudad-nombre">${escapeHtml(ciudad.nombre)}</h3>
-          ${ciudad.destacado ? `<span class="dir-destacado">${ciudad.destacado}</span>` : ''}
-          <span class="priority-badge ${pClass} dir-badge">${getPriorityLabel(ciudad.prioridad)}</span>
+          <h3 class="dir-ciudad-nombre">${escapeHtml(ciudad.nombre)} <small style="font-size:0.75rem; color:var(--clr-muted); font-weight:normal">(${escapeHtml(ciudad.provincia)})</small></h3>
+          ${destacadoHtml}
+          <span class="priority-badge ${pClass} dir-badge">${pLabel}</span>
         </div>
-        <div class="dir-cats-grid">${cats}</div>
+        <div class="dir-cats-grid">${catsHtml}</div>
       </div>`;
   }).join('');
 }
 
-function buildContactItem(item, catKey) {
-  const cfg = CAT_CONFIG[catKey] || { dotClass: 'default' };
-
-  // Para municipios mostramos las áreas de interés
-  if (catKey === 'municipios') {
-    const areas = (item.areasInteres || []).map(a =>
-      `<span class="oport-tag">${escapeHtml(a)}</span>`).join('');
-    return `
-      <div class="dir-item">
-        <span class="inst-dot ${cfg.dotClass}"></span>
-        <div class="dir-item-body">
-          <div class="dir-item-nombre">${escapeHtml(item.organismo)}</div>
-          ${areas ? `<div class="dir-item-areas">${areas}</div>` : ''}
-        </div>
-      </div>`;
-  }
-
-  // Para iglesias
-  if (catKey === 'iglesias') {
-    return `
-      <div class="dir-item">
-        <span class="inst-dot ${cfg.dotClass}"></span>
-        <div class="dir-item-body">
-          <div class="dir-item-nombre">${escapeHtml(item.nombre)}</div>
-        </div>
-      </div>`;
-  }
-
-  // Colectividades y espacios culturales
+function buildContactItem(item) {
   const hasTel  = !!item.telefono;
   const hasDirs = !!item.direccion;
   const hasWeb  = !!item.sitioWeb;
+  const hasEmail = !!item.email;
   const hasNota = !!item.notas;
+  const hasDesc = !!item.descripcion;
+
+  const tagsHtml = (item.tags || []).map(t =>
+    `<span class="oport-tag">${escapeHtml(t)}</span>`).join('');
+
+  const sugeridos = item.eventosSugeridos || item.eventosRelacionados || [];
+  const sugeridosHtml = sugeridos.map(e =>
+    `<span class="oport-tag" style="border-color: rgba(201,168,76,0.3); color: var(--clr-accent2);">${escapeHtml(e)}</span>`).join('');
+
+  const cfg = CAT_CONFIG[item.categoria] || { dotClass: 'default' };
 
   return `
     <div class="dir-item">
-      <span class="inst-dot ${getInstDotClass(item.tipo || '')}"></span>
+      <span class="inst-dot ${cfg.dotClass}"></span>
       <div class="dir-item-body">
         <div class="dir-item-nombre">${escapeHtml(item.nombre)}</div>
-        ${item.tipo ? `<div class="dir-item-tipo">${escapeHtml(item.tipo)}</div>` : ''}
+        ${item.subcategoria ? `<div class="dir-item-tipo">${escapeHtml(item.subcategoria)}</div>` : ''}
+        ${hasDesc ? `<div class="inst-desc-mini" style="margin-bottom: 4px;">${escapeHtml(item.descripcion)}</div>` : ''}
         <div class="dir-item-datos">
           ${hasDirs ? `<span class="dir-dato dir-dir">📍 ${escapeHtml(item.direccion)}</span>` : ''}
           ${hasTel  ? `<span class="dir-dato dir-tel">📞 ${escapeHtml(item.telefono)}</span>` : ''}
+          ${hasEmail ? `<span class="dir-dato dir-email">✉️ <a href="mailto:${escapeHtml(item.email)}" style="color:var(--clr-muted);text-decoration:underline;">${escapeHtml(item.email)}</a></span>` : ''}
           ${hasWeb  ? `<a class="dir-dato dir-web" href="${escapeHtml(item.sitioWeb)}" target="_blank" rel="noopener">🌐 sitio web</a>` : ''}
         </div>
         ${hasNota ? `<div class="dir-item-nota">${escapeHtml(item.notas)}</div>` : ''}
-        ${item.eventosRelacionados?.length ? `
+        ${tagsHtml || sugeridosHtml ? `
           <div class="inst-oportunidades">
-            ${item.eventosRelacionados.map(e => `<span class="oport-tag">${escapeHtml(e)}</span>`).join('')}
+            ${tagsHtml}
+            ${sugeridosHtml}
           </div>` : ''}
       </div>
     </div>`;
 }
 
-// ── Nav scroll effect ─────────────────────────────────────────
+// ── Navegación e Inicialización del Filtro de Provincias ──────────
+
+function initProvinceFilters(roadmap) {
+  const container = document.getElementById('province-pills');
+  if (!container) return;
+
+  container.addEventListener('click', e => {
+    const btn = e.target.closest('.province-pill');
+    if (!btn) return;
+
+    container.querySelectorAll('.province-pill').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+
+    activeProvince = btn.dataset.provincia;
+
+    const filteredLocalidades = activeProvince === 'all'
+      ? roadmap.localidades
+      : roadmap.localidades.filter(c => c.provincia === activeProvince);
+
+    const filteredContactos = activeProvince === 'all'
+      ? allContactosData
+      : allContactosData.filter(c => c.provincia === activeProvince);
+
+    buildHeroStats(filteredLocalidades, filteredContactos, roadmap);
+    buildCiudades(roadmap, activeProvince);
+    renderDirectorioChips();
+    renderDirectorio();
+    
+    // Reinicializar observers para las animaciones de entrada de nuevos elementos
+    setTimeout(initFadeObserver, 50);
+  });
+}
 
 function initNav() {
   const nav = document.getElementById('nav');
@@ -416,13 +499,16 @@ async function init() {
       ciudadesRes.json()
     ]);
 
-    buildHeroStats(roadmap, ciudadesData);
-    buildCiudades(roadmap);
+    allRoadmapData = roadmap;
+
+    buildHeroStats(roadmap.localidades, ciudadesData, roadmap);
+    buildCiudades(roadmap, 'all');
     buildCalendario(roadmap);
     buildCalendarioOculto(roadmap);
     buildMercados(roadmap);
     buildRepertorio(roadmap);
     buildDirectorio(ciudadesData);
+    initProvinceFilters(roadmap);
     setFooterFecha();
     initNav();
     setTimeout(initFadeObserver, 150);
